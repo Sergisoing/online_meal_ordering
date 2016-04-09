@@ -659,3 +659,8 @@
                 </div><!-- sidebar-inner -->
             </aside>
             <div class="main-container">
+                <div class="padding-md">
+                    <div class="alert alert-success alert-dismissible" id="alert-div" style="display:none;" role="alert">
+                        <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <i class="fa fa-check-circle m-right-xs"></i><span class="alert-text">You successfully read this important alert message.</span>
+                    </div>

@@ -1,3 +1,4 @@
+            </div>
         </div>
         <footer class="footer">
             <span class="footer-brand">
@@ -25,5 +26,9 @@
 
     <!-- Simplify -->
     <script src="js/simplify/simplify.js"></script>
+    </body>
+
+    <!-- Common -->
+    <script src="js/self/common.js"></script>
     </body>
 </html>
