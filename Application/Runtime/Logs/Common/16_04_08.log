@@ -1,0 +1,24 @@
+[ 2016-04-08T19:16:32+08:00 ] 127.0.0.1 /online_meal_ordering/index.php/hone/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+ERR: 无法加载模块:Index.php
+
+[ 2016-04-08T19:16:39+08:00 ] 127.0.0.1 /online_meal_ordering/hone/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+ERR: 无法加载模块:Hone
+
+[ 2016-04-08T19:24:22+08:00 ] 192.168.199.1 /online_meal_ordering/index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000187s ]
+ERR: 无法加载模块:Index.php
+
+[ 2016-04-08T19:24:28+08:00 ] 192.168.199.1 /online_meal_ordering/index.php/home/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+ERR: 无法加载模块:Index.php
+
