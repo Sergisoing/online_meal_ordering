@@ -40,3 +40,1449 @@ INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000158s ]
 ERR: 无法加载模块:Demo
 
+[ 2016-04-09T13:51:17+08:00 ] 127.0.0.1 /online_meal_ordering/demo/simplify/landing/rs-plugin/assets/timer.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000193s ]
+ERR: 无法加载模块:Demo
+
+[ 2016-04-09T13:51:17+08:00 ] 127.0.0.1 /online_meal_ordering/demo/simplify/landing/images/frontend/banner1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000193s ]
+ERR: 无法加载模块:Demo
+
+[ 2016-04-09T13:51:17+08:00 ] 127.0.0.1 /online_meal_ordering/demo/simplify/landing/rs-plugin/font/revicons.woff?5510888
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000630s ]
+ERR: 无法加载模块:Demo
+
+[ 2016-04-09T13:51:17+08:00 ] 127.0.0.1 /online_meal_ordering/demo/simplify/landing/images/redbg_big.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000152s ]
+ERR: 无法加载模块:Demo
+
+[ 2016-04-09T13:51:17+08:00 ] 127.0.0.1 /online_meal_ordering/demo/simplify/landing/images/frontend/macbook.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000123s ]
+ERR: 无法加载模块:Demo
+
+[ 2016-04-09T13:51:17+08:00 ] 127.0.0.1 /online_meal_ordering/demo/simplify/landing/images/frontend/iMac.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000161s ]
+ERR: 无法加载模块:Demo
+
+[ 2016-04-09T13:51:17+08:00 ] 127.0.0.1 /online_meal_ordering/demo/simplify/landing/images/greyline.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000161s ]
+ERR: 无法加载模块:Demo
+
+[ 2016-04-09T13:51:17+08:00 ] 127.0.0.1 /online_meal_ordering/demo/simplify/landing/rs-plugin/font/revicons.ttf?5510888
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+ERR: 无法加载模块:Demo
+
+[ 2016-04-09T17:47:00+08:00 ] 127.0.0.1 /online_meal_ordering/bootstrap/css/bootstrap.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+ERR: 无法加载模块:Bootstrap
+
+[ 2016-04-09T17:47:00+08:00 ] 127.0.0.1 /online_meal_ordering/css/font-awesome.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000185s ]
+ERR: 无法加载模块:Css
+
+[ 2016-04-09T17:47:00+08:00 ] 127.0.0.1 /online_meal_ordering/css/ionicons.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000099s ]
+ERR: 无法加载模块:Css
+
+[ 2016-04-09T17:47:00+08:00 ] 127.0.0.1 /online_meal_ordering/css/morris.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000147s ]
+ERR: 无法加载模块:Css
+
+[ 2016-04-09T17:47:00+08:00 ] 127.0.0.1 /online_meal_ordering/css/datepicker.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000160s ]
+ERR: 无法加载模块:Css
+
+[ 2016-04-09T17:47:00+08:00 ] 127.0.0.1 /online_meal_ordering/css/animate.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000171s ]
+ERR: 无法加载模块:Css
+
+[ 2016-04-09T17:47:00+08:00 ] 127.0.0.1 /online_meal_ordering/css/owl.carousel.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000159s ]
+ERR: 无法加载模块:Css
+
+[ 2016-04-09T17:47:00+08:00 ] 127.0.0.1 /online_meal_ordering/css/owl.theme.default.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000166s ]
+ERR: 无法加载模块:Css
+
+[ 2016-04-09T17:47:00+08:00 ] 127.0.0.1 /online_meal_ordering/css/self/common.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000138s ]
+ERR: 无法加载模块:Css
+
+[ 2016-04-09T17:47:00+08:00 ] 127.0.0.1 /online_meal_ordering/css/simplify.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000133s ]
+ERR: 无法加载模块:Css
+
+[ 2016-04-09T17:47:00+08:00 ] 127.0.0.1 /online_meal_ordering/js/jquery-1.11.1.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000096s ]
+ERR: 无法加载模块:Js
+
+[ 2016-04-09T17:47:00+08:00 ] 127.0.0.1 /online_meal_ordering/bootstrap/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+ERR: 无法加载模块:Bootstrap
+
+[ 2016-04-09T17:47:00+08:00 ] 127.0.0.1 /online_meal_ordering/js/jquery.popupoverlay.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000151s ]
+ERR: 无法加载模块:Js
+
+[ 2016-04-09T17:47:00+08:00 ] 127.0.0.1 /online_meal_ordering/js/jquery.slimscroll.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000152s ]
+ERR: 无法加载模块:Js
+
+[ 2016-04-09T17:47:00+08:00 ] 127.0.0.1 /online_meal_ordering/js/modernizr.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000144s ]
+ERR: 无法加载模块:Js
+
+[ 2016-04-09T17:47:00+08:00 ] 127.0.0.1 /online_meal_ordering/js/simplify/simplify.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000368s ]
+ERR: 无法加载模块:Js
+
+[ 2016-04-09T17:47:00+08:00 ] 127.0.0.1 /online_meal_ordering/js/self/common.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000177s ]
+ERR: 无法加载模块:Js
+
+[ 2016-04-09T17:47:00+08:00 ] 127.0.0.1 /online_meal_ordering/images/profile/profile2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+ERR: 无法加载模块:Images
+
+[ 2016-04-09T17:47:00+08:00 ] 127.0.0.1 /online_meal_ordering/images/profile/profile4.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000150s ]
+ERR: 无法加载模块:Images
+
+[ 2016-04-09T17:47:00+08:00 ] 127.0.0.1 /online_meal_ordering/images/profile/profile3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000150s ]
+ERR: 无法加载模块:Images
+
+[ 2016-04-09T17:47:00+08:00 ] 127.0.0.1 /online_meal_ordering/images/profile/profile5.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000126s ]
+ERR: 无法加载模块:Images
+
+[ 2016-04-09T17:47:00+08:00 ] 127.0.0.1 /online_meal_ordering/images/profile/profile6.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000154s ]
+ERR: 无法加载模块:Images
+
+[ 2016-04-09T17:47:00+08:00 ] 127.0.0.1 /online_meal_ordering/images/profile/profile7.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000126s ]
+ERR: 无法加载模块:Images
+
+[ 2016-04-09T17:47:00+08:00 ] 127.0.0.1 /online_meal_ordering/images/profile/profile8.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000152s ]
+ERR: 无法加载模块:Images
+
+[ 2016-04-09T17:47:00+08:00 ] 127.0.0.1 /online_meal_ordering/images/profile/profile9.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+ERR: 无法加载模块:Images
+
+[ 2016-04-09T17:47:00+08:00 ] 127.0.0.1 /online_meal_ordering/images/profile/profile1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000125s ]
+ERR: 无法加载模块:Images
+
+[ 2016-04-09T17:47:04+08:00 ] 127.0.0.1 /online_meal_ordering/bootstrap/css/bootstrap.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000195s ]
+ERR: 无法加载模块:Bootstrap
+
+[ 2016-04-09T17:47:04+08:00 ] 127.0.0.1 /online_meal_ordering/css/font-awesome.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000187s ]
+ERR: 无法加载模块:Css
+
+[ 2016-04-09T17:47:04+08:00 ] 127.0.0.1 /online_meal_ordering/css/ionicons.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000173s ]
+ERR: 无法加载模块:Css
+
+[ 2016-04-09T17:47:04+08:00 ] 127.0.0.1 /online_meal_ordering/css/morris.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000160s ]
+ERR: 无法加载模块:Css
+
+[ 2016-04-09T17:47:04+08:00 ] 127.0.0.1 /online_meal_ordering/css/datepicker.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000130s ]
+ERR: 无法加载模块:Css
+
+[ 2016-04-09T17:47:04+08:00 ] 127.0.0.1 /online_meal_ordering/css/animate.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000167s ]
+ERR: 无法加载模块:Css
+
+[ 2016-04-09T17:47:04+08:00 ] 127.0.0.1 /online_meal_ordering/css/owl.carousel.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000167s ]
+ERR: 无法加载模块:Css
+
+[ 2016-04-09T17:47:04+08:00 ] 127.0.0.1 /online_meal_ordering/css/owl.theme.default.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000162s ]
+ERR: 无法加载模块:Css
+
+[ 2016-04-09T17:47:04+08:00 ] 127.0.0.1 /online_meal_ordering/css/simplify.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000129s ]
+ERR: 无法加载模块:Css
+
+[ 2016-04-09T17:47:04+08:00 ] 127.0.0.1 /online_meal_ordering/css/self/common.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+ERR: 无法加载模块:Css
+
+[ 2016-04-09T17:48:29+08:00 ] 127.0.0.1 /online_meal_ordering/bootstrap/css/bootstrap.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000205s ]
+ERR: 无法加载模块:Bootstrap
+
+[ 2016-04-09T17:48:29+08:00 ] 127.0.0.1 /online_meal_ordering/css/ionicons.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000169s ]
+ERR: 无法加载模块:Css
+
+[ 2016-04-09T17:48:29+08:00 ] 127.0.0.1 /online_meal_ordering/css/morris.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000156s ]
+ERR: 无法加载模块:Css
+
+[ 2016-04-09T17:48:29+08:00 ] 127.0.0.1 /online_meal_ordering/css/font-awesome.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+ERR: 无法加载模块:Css
+
+[ 2016-04-09T17:48:29+08:00 ] 127.0.0.1 /online_meal_ordering/css/datepicker.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000156s ]
+ERR: 无法加载模块:Css
+
+[ 2016-04-09T17:48:29+08:00 ] 127.0.0.1 /online_meal_ordering/css/animate.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000136s ]
+ERR: 无法加载模块:Css
+
+[ 2016-04-09T17:48:29+08:00 ] 127.0.0.1 /online_meal_ordering/css/owl.carousel.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000165s ]
+ERR: 无法加载模块:Css
+
+[ 2016-04-09T17:48:29+08:00 ] 127.0.0.1 /online_meal_ordering/css/owl.theme.default.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000167s ]
+ERR: 无法加载模块:Css
+
+[ 2016-04-09T17:48:29+08:00 ] 127.0.0.1 /online_meal_ordering/css/simplify.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000143s ]
+ERR: 无法加载模块:Css
+
+[ 2016-04-09T17:48:29+08:00 ] 127.0.0.1 /online_meal_ordering/js/jquery-1.11.1.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+ERR: 无法加载模块:Js
+
+[ 2016-04-09T17:48:29+08:00 ] 127.0.0.1 /online_meal_ordering/css/self/common.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000155s ]
+ERR: 无法加载模块:Css
+
+[ 2016-04-09T17:48:29+08:00 ] 127.0.0.1 /online_meal_ordering/bootstrap/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000147s ]
+ERR: 无法加载模块:Bootstrap
+
+[ 2016-04-09T17:48:29+08:00 ] 127.0.0.1 /online_meal_ordering/js/jquery.slimscroll.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000164s ]
+ERR: 无法加载模块:Js
+
+[ 2016-04-09T17:48:29+08:00 ] 127.0.0.1 /online_meal_ordering/js/modernizr.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000101s ]
+ERR: 无法加载模块:Js
+
+[ 2016-04-09T17:48:29+08:00 ] 127.0.0.1 /online_meal_ordering/js/simplify/simplify.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000100s ]
+ERR: 无法加载模块:Js
+
+[ 2016-04-09T17:48:29+08:00 ] 127.0.0.1 /online_meal_ordering/js/jquery.popupoverlay.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000104s ]
+ERR: 无法加载模块:Js
+
+[ 2016-04-09T17:48:29+08:00 ] 127.0.0.1 /online_meal_ordering/js/self/common.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000170s ]
+ERR: 无法加载模块:Js
+
+[ 2016-04-09T17:48:29+08:00 ] 127.0.0.1 /online_meal_ordering/images/profile/profile2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000211s ]
+ERR: 无法加载模块:Images
+
+[ 2016-04-09T17:48:29+08:00 ] 127.0.0.1 /online_meal_ordering/images/profile/profile4.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000138s ]
+ERR: 无法加载模块:Images
+
+[ 2016-04-09T17:48:29+08:00 ] 127.0.0.1 /online_meal_ordering/images/profile/profile3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000149s ]
+ERR: 无法加载模块:Images
+
+[ 2016-04-09T17:48:29+08:00 ] 127.0.0.1 /online_meal_ordering/images/profile/profile5.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000130s ]
+ERR: 无法加载模块:Images
+
+[ 2016-04-09T17:48:29+08:00 ] 127.0.0.1 /online_meal_ordering/images/profile/profile7.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000104s ]
+ERR: 无法加载模块:Images
+
+[ 2016-04-09T17:48:29+08:00 ] 127.0.0.1 /online_meal_ordering/images/profile/profile6.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+ERR: 无法加载模块:Images
+
+[ 2016-04-09T17:48:29+08:00 ] 127.0.0.1 /online_meal_ordering/images/profile/profile8.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000160s ]
+ERR: 无法加载模块:Images
+
+[ 2016-04-09T17:48:29+08:00 ] 127.0.0.1 /online_meal_ordering/images/profile/profile1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000100s ]
+ERR: 无法加载模块:Images
+
+[ 2016-04-09T17:48:29+08:00 ] 127.0.0.1 /online_meal_ordering/images/profile/profile9.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000144s ]
+ERR: 无法加载模块:Images
+
+[ 2016-04-09T17:48:53+08:00 ] 127.0.0.1 /online_meal_ordering/Public/bootstrap/css/bootstrap.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000156s ]
+ERR: 无法加载模块:Public
+
+[ 2016-04-09T17:48:53+08:00 ] 127.0.0.1 /online_meal_ordering/Public/css/font-awesome.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000205s ]
+ERR: 无法加载模块:Public
+
+[ 2016-04-09T17:48:53+08:00 ] 127.0.0.1 /online_meal_ordering/Public/css/ionicons.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000167s ]
+ERR: 无法加载模块:Public
+
+[ 2016-04-09T17:48:53+08:00 ] 127.0.0.1 /online_meal_ordering/Public/css/morris.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000103s ]
+ERR: 无法加载模块:Public
+
+[ 2016-04-09T17:48:53+08:00 ] 127.0.0.1 /online_meal_ordering/Public/css/datepicker.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000126s ]
+ERR: 无法加载模块:Public
+
+[ 2016-04-09T17:48:53+08:00 ] 127.0.0.1 /online_meal_ordering/Public/css/animate.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000106s ]
+ERR: 无法加载模块:Public
+
+[ 2016-04-09T17:48:53+08:00 ] 127.0.0.1 /online_meal_ordering/Public/css/owl.carousel.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000154s ]
+ERR: 无法加载模块:Public
+
+[ 2016-04-09T17:48:53+08:00 ] 127.0.0.1 /online_meal_ordering/Public/css/owl.theme.default.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000144s ]
+ERR: 无法加载模块:Public
+
+[ 2016-04-09T17:48:53+08:00 ] 127.0.0.1 /online_meal_ordering/Public/css/simplify.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000144s ]
+ERR: 无法加载模块:Public
+
+[ 2016-04-09T17:48:53+08:00 ] 127.0.0.1 /online_meal_ordering/Public/css/self/common.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000166s ]
+ERR: 无法加载模块:Public
+
+[ 2016-04-09T17:48:53+08:00 ] 127.0.0.1 /online_meal_ordering/Public/js/jquery-1.11.1.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000176s ]
+ERR: 无法加载模块:Public
+
+[ 2016-04-09T17:48:53+08:00 ] 127.0.0.1 /online_meal_ordering/Public/bootstrap/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000100s ]
+ERR: 无法加载模块:Public
+
+[ 2016-04-09T17:48:53+08:00 ] 127.0.0.1 /online_meal_ordering/Public/js/jquery.slimscroll.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000147s ]
+ERR: 无法加载模块:Public
+
+[ 2016-04-09T17:48:53+08:00 ] 127.0.0.1 /online_meal_ordering/Public/js/jquery.popupoverlay.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000153s ]
+ERR: 无法加载模块:Public
+
+[ 2016-04-09T17:48:53+08:00 ] 127.0.0.1 /online_meal_ordering/Public/js/modernizr.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000124s ]
+ERR: 无法加载模块:Public
+
+[ 2016-04-09T17:48:53+08:00 ] 127.0.0.1 /online_meal_ordering/Public/js/simplify/simplify.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000153s ]
+ERR: 无法加载模块:Public
+
+[ 2016-04-09T17:48:53+08:00 ] 127.0.0.1 /online_meal_ordering/Public/js/self/common.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000123s ]
+ERR: 无法加载模块:Public
+
+[ 2016-04-09T17:48:53+08:00 ] 127.0.0.1 /online_meal_ordering/Public/images/profile/profile2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000159s ]
+ERR: 无法加载模块:Public
+
+[ 2016-04-09T17:48:53+08:00 ] 127.0.0.1 /online_meal_ordering/Public/images/profile/profile3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000165s ]
+ERR: 无法加载模块:Public
+
+[ 2016-04-09T17:48:53+08:00 ] 127.0.0.1 /online_meal_ordering/Public/images/profile/profile4.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000173s ]
+ERR: 无法加载模块:Public
+
+[ 2016-04-09T17:48:53+08:00 ] 127.0.0.1 /online_meal_ordering/Public/images/profile/profile5.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+ERR: 无法加载模块:Public
+
+[ 2016-04-09T17:48:53+08:00 ] 127.0.0.1 /online_meal_ordering/Public/images/profile/profile6.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000181s ]
+ERR: 无法加载模块:Public
+
+[ 2016-04-09T17:48:53+08:00 ] 127.0.0.1 /online_meal_ordering/Public/images/profile/profile7.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000176s ]
+ERR: 无法加载模块:Public
+
+[ 2016-04-09T17:48:53+08:00 ] 127.0.0.1 /online_meal_ordering/Public/images/profile/profile8.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000168s ]
+ERR: 无法加载模块:Public
+
+[ 2016-04-09T17:48:53+08:00 ] 127.0.0.1 /online_meal_ordering/Public/images/profile/profile9.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000151s ]
+ERR: 无法加载模块:Public
+
+[ 2016-04-09T17:48:53+08:00 ] 127.0.0.1 /online_meal_ordering/Public/images/profile/profile1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000166s ]
+ERR: 无法加载模块:Public
+
+[ 2016-04-09T18:02:06+08:00 ] 127.0.0.1 /online_meal_ordering/Public/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000211s ]
+ERR: 无法加载模块:Public
+
+[ 2016-04-09T18:03:06+08:00 ] 127.0.0.1 /online_meal_ordering/bootstrap/css/bootstrap.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000169s ]
+ERR: 无法加载模块:Bootstrap
+
+[ 2016-04-09T18:03:06+08:00 ] 127.0.0.1 /online_meal_ordering/css/font-awesome.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000159s ]
+ERR: 无法加载模块:Css
+
+[ 2016-04-09T18:03:06+08:00 ] 127.0.0.1 /online_meal_ordering/css/ionicons.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000176s ]
+ERR: 无法加载模块:Css
+
+[ 2016-04-09T18:03:06+08:00 ] 127.0.0.1 /online_meal_ordering/css/morris.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000165s ]
+ERR: 无法加载模块:Css
+
+[ 2016-04-09T18:03:06+08:00 ] 127.0.0.1 /online_meal_ordering/css/datepicker.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000180s ]
+ERR: 无法加载模块:Css
+
+[ 2016-04-09T18:03:06+08:00 ] 127.0.0.1 /online_meal_ordering/css/animate.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000152s ]
+ERR: 无法加载模块:Css
+
+[ 2016-04-09T18:03:06+08:00 ] 127.0.0.1 /online_meal_ordering/css/owl.carousel.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000157s ]
+ERR: 无法加载模块:Css
+
+[ 2016-04-09T18:03:06+08:00 ] 127.0.0.1 /online_meal_ordering/css/owl.theme.default.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000139s ]
+ERR: 无法加载模块:Css
+
+[ 2016-04-09T18:03:06+08:00 ] 127.0.0.1 /online_meal_ordering/css/simplify.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000165s ]
+ERR: 无法加载模块:Css
+
+[ 2016-04-09T18:03:06+08:00 ] 127.0.0.1 /online_meal_ordering/css/self/common.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000163s ]
+ERR: 无法加载模块:Css
+
+[ 2016-04-09T18:03:06+08:00 ] 127.0.0.1 /online_meal_ordering/js/jquery-1.11.1.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000136s ]
+ERR: 无法加载模块:Js
+
+[ 2016-04-09T18:03:06+08:00 ] 127.0.0.1 /online_meal_ordering/bootstrap/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000133s ]
+ERR: 无法加载模块:Bootstrap
+
+[ 2016-04-09T18:03:06+08:00 ] 127.0.0.1 /online_meal_ordering/js/jquery.slimscroll.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000145s ]
+ERR: 无法加载模块:Js
+
+[ 2016-04-09T18:03:06+08:00 ] 127.0.0.1 /online_meal_ordering/js/jquery.popupoverlay.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000145s ]
+ERR: 无法加载模块:Js
+
+[ 2016-04-09T18:03:06+08:00 ] 127.0.0.1 /online_meal_ordering/js/simplify/simplify.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000101s ]
+ERR: 无法加载模块:Js
+
+[ 2016-04-09T18:03:06+08:00 ] 127.0.0.1 /online_meal_ordering/js/self/common.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000162s ]
+ERR: 无法加载模块:Js
+
+[ 2016-04-09T18:03:06+08:00 ] 127.0.0.1 /online_meal_ordering/js/modernizr.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000148s ]
+ERR: 无法加载模块:Js
+
+[ 2016-04-09T18:03:06+08:00 ] 127.0.0.1 /online_meal_ordering/images/profile/profile2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000160s ]
+ERR: 无法加载模块:Images
+
+[ 2016-04-09T18:03:06+08:00 ] 127.0.0.1 /online_meal_ordering/images/profile/profile3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000173s ]
+ERR: 无法加载模块:Images
+
+[ 2016-04-09T18:03:06+08:00 ] 127.0.0.1 /online_meal_ordering/images/profile/profile5.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000170s ]
+ERR: 无法加载模块:Images
+
+[ 2016-04-09T18:03:06+08:00 ] 127.0.0.1 /online_meal_ordering/images/profile/profile4.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000210s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+ERR: 无法加载模块:Images
+
+[ 2016-04-09T18:03:06+08:00 ] 127.0.0.1 /online_meal_ordering/images/profile/profile6.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000189s ]
+ERR: 无法加载模块:Images
+
+[ 2016-04-09T18:03:06+08:00 ] 127.0.0.1 /online_meal_ordering/images/profile/profile7.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000164s ]
+ERR: 无法加载模块:Images
+
+[ 2016-04-09T18:03:06+08:00 ] 127.0.0.1 /online_meal_ordering/images/profile/profile8.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000169s ]
+ERR: 无法加载模块:Images
+
+[ 2016-04-09T18:03:06+08:00 ] 127.0.0.1 /online_meal_ordering/images/profile/profile9.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000165s ]
+ERR: 无法加载模块:Images
+
+[ 2016-04-09T18:03:06+08:00 ] 127.0.0.1 /online_meal_ordering/images/profile/profile1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+ERR: 无法加载模块:Images
+
+[ 2016-04-09T18:03:09+08:00 ] 127.0.0.1 /online_meal_ordering/bootstrap/css/bootstrap.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000161s ]
+ERR: 无法加载模块:Bootstrap
+
+[ 2016-04-09T18:03:09+08:00 ] 127.0.0.1 /online_meal_ordering/css/ionicons.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000102s ]
+ERR: 无法加载模块:Css
+
+[ 2016-04-09T18:03:09+08:00 ] 127.0.0.1 /online_meal_ordering/css/font-awesome.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000161s ]
+ERR: 无法加载模块:Css
+
+[ 2016-04-09T18:03:09+08:00 ] 127.0.0.1 /online_meal_ordering/css/morris.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000154s ]
+ERR: 无法加载模块:Css
+
+[ 2016-04-09T18:03:09+08:00 ] 127.0.0.1 /online_meal_ordering/css/animate.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000100s ]
+ERR: 无法加载模块:Css
+
+[ 2016-04-09T18:03:09+08:00 ] 127.0.0.1 /online_meal_ordering/css/datepicker.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000133s ]
+ERR: 无法加载模块:Css
+
+[ 2016-04-09T18:03:09+08:00 ] 127.0.0.1 /online_meal_ordering/css/owl.carousel.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000167s ]
+ERR: 无法加载模块:Css
+
+[ 2016-04-09T18:03:09+08:00 ] 127.0.0.1 /online_meal_ordering/css/owl.theme.default.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000129s ]
+ERR: 无法加载模块:Css
+
+[ 2016-04-09T18:03:09+08:00 ] 127.0.0.1 /online_meal_ordering/css/simplify.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000151s ]
+ERR: 无法加载模块:Css
+
+[ 2016-04-09T18:03:09+08:00 ] 127.0.0.1 /online_meal_ordering/css/self/common.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000137s ]
+ERR: 无法加载模块:Css
+
+[ 2016-04-09T18:03:28+08:00 ] 127.0.0.1 /online_meal_ordering/bootstrap/css/bootstrap.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000179s ]
+ERR: 无法加载模块:Bootstrap
+
+[ 2016-04-09T18:03:28+08:00 ] 127.0.0.1 /online_meal_ordering/css/font-awesome.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000182s ]
+ERR: 无法加载模块:Css
+
+[ 2016-04-09T18:03:28+08:00 ] 127.0.0.1 /online_meal_ordering/css/datepicker.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000177s ]
+ERR: 无法加载模块:Css
+
+[ 2016-04-09T18:03:28+08:00 ] 127.0.0.1 /online_meal_ordering/css/morris.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000183s ]
+ERR: 无法加载模块:Css
+
+[ 2016-04-09T18:03:28+08:00 ] 127.0.0.1 /online_meal_ordering/css/animate.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000173s ]
+ERR: 无法加载模块:Css
+
+[ 2016-04-09T18:03:28+08:00 ] 127.0.0.1 /online_meal_ordering/css/ionicons.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000186s ]
+ERR: 无法加载模块:Css
+
+[ 2016-04-09T18:03:28+08:00 ] 127.0.0.1 /online_meal_ordering/css/owl.carousel.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+ERR: 无法加载模块:Css
+
+[ 2016-04-09T18:03:28+08:00 ] 127.0.0.1 /online_meal_ordering/css/simplify.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000141s ]
+ERR: 无法加载模块:Css
+
+[ 2016-04-09T18:03:28+08:00 ] 127.0.0.1 /online_meal_ordering/css/owl.theme.default.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000179s ]
+ERR: 无法加载模块:Css
+
+[ 2016-04-09T18:03:28+08:00 ] 127.0.0.1 /online_meal_ordering/js/jquery-1.11.1.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000164s ]
+ERR: 无法加载模块:Js
+
+[ 2016-04-09T18:03:28+08:00 ] 127.0.0.1 /online_meal_ordering/css/self/common.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000146s ]
+ERR: 无法加载模块:Css
+
+[ 2016-04-09T18:03:28+08:00 ] 127.0.0.1 /online_meal_ordering/js/jquery.slimscroll.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+ERR: 无法加载模块:Js
+
+[ 2016-04-09T18:03:28+08:00 ] 127.0.0.1 /online_meal_ordering/bootstrap/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000141s ]
+ERR: 无法加载模块:Bootstrap
+
+[ 2016-04-09T18:03:28+08:00 ] 127.0.0.1 /online_meal_ordering/js/jquery.popupoverlay.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000161s ]
+ERR: 无法加载模块:Js
+
+[ 2016-04-09T18:03:28+08:00 ] 127.0.0.1 /online_meal_ordering/js/modernizr.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000176s ]
+ERR: 无法加载模块:Js
+
+[ 2016-04-09T18:03:28+08:00 ] 127.0.0.1 /online_meal_ordering/js/simplify/simplify.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000165s ]
+ERR: 无法加载模块:Js
+
+[ 2016-04-09T18:03:28+08:00 ] 127.0.0.1 /online_meal_ordering/js/self/common.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000171s ]
+ERR: 无法加载模块:Js
+
+[ 2016-04-09T18:03:28+08:00 ] 127.0.0.1 /online_meal_ordering/images/profile/profile2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000154s ]
+ERR: 无法加载模块:Images
+
+[ 2016-04-09T18:03:28+08:00 ] 127.0.0.1 /online_meal_ordering/images/profile/profile3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000154s ]
+ERR: 无法加载模块:Images
+
+[ 2016-04-09T18:03:28+08:00 ] 127.0.0.1 /online_meal_ordering/images/profile/profile4.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000133s ]
+ERR: 无法加载模块:Images
+
+[ 2016-04-09T18:03:28+08:00 ] 127.0.0.1 /online_meal_ordering/images/profile/profile5.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+ERR: 无法加载模块:Images
+
+[ 2016-04-09T18:03:28+08:00 ] 127.0.0.1 /online_meal_ordering/images/profile/profile6.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000155s ]
+ERR: 无法加载模块:Images
+
+[ 2016-04-09T18:03:28+08:00 ] 127.0.0.1 /online_meal_ordering/images/profile/profile7.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000134s ]
+ERR: 无法加载模块:Images
+
+[ 2016-04-09T18:03:28+08:00 ] 127.0.0.1 /online_meal_ordering/images/profile/profile8.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000168s ]
+ERR: 无法加载模块:Images
+
+[ 2016-04-09T18:03:28+08:00 ] 127.0.0.1 /online_meal_ordering/images/profile/profile9.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000155s ]
+ERR: 无法加载模块:Images
+
+[ 2016-04-09T18:03:28+08:00 ] 127.0.0.1 /online_meal_ordering/images/profile/profile1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000185s ]
+ERR: 无法加载模块:Images
+
+[ 2016-04-09T18:04:09+08:00 ] 127.0.0.1 /online_meal_ordering/bootstrap/css/bootstrap.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000160s ]
+ERR: 无法加载模块:Bootstrap
+
+[ 2016-04-09T18:04:09+08:00 ] 127.0.0.1 /online_meal_ordering/css/font-awesome.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000165s ]
+ERR: 无法加载模块:Css
+
+[ 2016-04-09T18:04:09+08:00 ] 127.0.0.1 /online_meal_ordering/css/ionicons.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000102s ]
+ERR: 无法加载模块:Css
+
+[ 2016-04-09T18:04:09+08:00 ] 127.0.0.1 /online_meal_ordering/css/morris.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000164s ]
+ERR: 无法加载模块:Css
+
+[ 2016-04-09T18:04:09+08:00 ] 127.0.0.1 /online_meal_ordering/css/datepicker.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000102s ]
+ERR: 无法加载模块:Css
+
+[ 2016-04-09T18:04:09+08:00 ] 127.0.0.1 /online_meal_ordering/css/animate.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000164s ]
+ERR: 无法加载模块:Css
+
+[ 2016-04-09T18:04:09+08:00 ] 127.0.0.1 /online_meal_ordering/css/owl.carousel.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000164s ]
+ERR: 无法加载模块:Css
+
+[ 2016-04-09T18:04:09+08:00 ] 127.0.0.1 /online_meal_ordering/css/simplify.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+ERR: 无法加载模块:Css
+
+[ 2016-04-09T18:04:09+08:00 ] 127.0.0.1 /online_meal_ordering/css/owl.theme.default.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000168s ]
+ERR: 无法加载模块:Css
+
+[ 2016-04-09T18:04:09+08:00 ] 127.0.0.1 /online_meal_ordering/css/self/common.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000170s ]
+ERR: 无法加载模块:Css
+
+[ 2016-04-09T18:04:09+08:00 ] 127.0.0.1 /online_meal_ordering/bootstrap/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+ERR: 无法加载模块:Bootstrap
+
+[ 2016-04-09T18:04:09+08:00 ] 127.0.0.1 /online_meal_ordering/js/jquery-1.11.1.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000166s ]
+ERR: 无法加载模块:Js
+
+[ 2016-04-09T18:04:09+08:00 ] 127.0.0.1 /online_meal_ordering/js/jquery.slimscroll.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000193s ]
+ERR: 无法加载模块:Js
+
+[ 2016-04-09T18:04:09+08:00 ] 127.0.0.1 /online_meal_ordering/js/jquery.popupoverlay.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000143s ]
+ERR: 无法加载模块:Js
+
+[ 2016-04-09T18:04:09+08:00 ] 127.0.0.1 /online_meal_ordering/js/modernizr.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+ERR: 无法加载模块:Js
+
+[ 2016-04-09T18:04:09+08:00 ] 127.0.0.1 /online_meal_ordering/js/simplify/simplify.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000146s ]
+ERR: 无法加载模块:Js
+
+[ 2016-04-09T18:04:09+08:00 ] 127.0.0.1 /online_meal_ordering/js/self/common.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000133s ]
+ERR: 无法加载模块:Js
+
+[ 2016-04-09T18:04:09+08:00 ] 127.0.0.1 /online_meal_ordering/images/profile/profile3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000183s ]
+ERR: 无法加载模块:Images
+
+[ 2016-04-09T18:04:09+08:00 ] 127.0.0.1 /online_meal_ordering/images/profile/profile2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000173s ]
+ERR: 无法加载模块:Images
+
+[ 2016-04-09T18:04:09+08:00 ] 127.0.0.1 /online_meal_ordering/images/profile/profile4.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000163s ]
+ERR: 无法加载模块:Images
+
+[ 2016-04-09T18:04:09+08:00 ] 127.0.0.1 /online_meal_ordering/images/profile/profile5.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000165s ]
+ERR: 无法加载模块:Images
+
+[ 2016-04-09T18:04:09+08:00 ] 127.0.0.1 /online_meal_ordering/images/profile/profile6.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000142s ]
+ERR: 无法加载模块:Images
+
+[ 2016-04-09T18:04:09+08:00 ] 127.0.0.1 /online_meal_ordering/images/profile/profile7.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+ERR: 无法加载模块:Images
+
+[ 2016-04-09T18:04:09+08:00 ] 127.0.0.1 /online_meal_ordering/images/profile/profile8.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+ERR: 无法加载模块:Images
+
+[ 2016-04-09T18:04:09+08:00 ] 127.0.0.1 /online_meal_ordering/images/profile/profile1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000130s ]
+ERR: 无法加载模块:Images
+
+[ 2016-04-09T18:04:09+08:00 ] 127.0.0.1 /online_meal_ordering/images/profile/profile9.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000161s ]
+ERR: 无法加载模块:Images
+
+[ 2016-04-09T18:05:38+08:00 ] 127.0.0.1 /online_meal_ordering/Public/inbox.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000146s ]
+ERR: 无法加载模块:Public
+
+[ 2016-04-09T18:13:41+08:00 ] 127.0.0.1 /online_meal_ordering/%EF%BC%A1%EF%BD%84%EF%BD%8D%EF%BD%89%EF%BD%8E
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+ERR: 无法加载模块:Ａｄｍｉｎ
+
+[ 2016-04-09T18:15:35+08:00 ] 127.0.0.1 /online_meal_ordering/admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+ERR: 无法加载模块:Admin
+
+[ 2016-04-09T19:11:27+08:00 ] 127.0.0.1 /online_meal_ordering/demo/simplify/landing/rs-plugin/assets/timer.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000206s ]
+ERR: 无法加载模块:Demo
+
+[ 2016-04-09T19:11:27+08:00 ] 127.0.0.1 /online_meal_ordering/demo/simplify/landing/rs-plugin/font/revicons.woff?5510888
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000189s ]
+ERR: 无法加载模块:Demo
+
+[ 2016-04-09T19:11:27+08:00 ] 127.0.0.1 /online_meal_ordering/demo/simplify/landing/images/frontend/banner1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000177s ]
+ERR: 无法加载模块:Demo
+
+[ 2016-04-09T19:11:27+08:00 ] 127.0.0.1 /online_meal_ordering/demo/simplify/landing/rs-plugin/font/revicons.ttf?5510888
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+ERR: 无法加载模块:Demo
+
+[ 2016-04-09T19:11:27+08:00 ] 127.0.0.1 /online_meal_ordering/demo/simplify/landing/images/redbg_big.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000184s ]
+ERR: 无法加载模块:Demo
+
+[ 2016-04-09T19:11:27+08:00 ] 127.0.0.1 /online_meal_ordering/demo/simplify/landing/images/frontend/macbook.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000668s ]
+ERR: 无法加载模块:Demo
+
+[ 2016-04-09T19:11:27+08:00 ] 127.0.0.1 /online_meal_ordering/demo/simplify/landing/images/frontend/iMac.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000154s ]
+ERR: 无法加载模块:Demo
+
+[ 2016-04-09T19:11:27+08:00 ] 127.0.0.1 /online_meal_ordering/demo/simplify/landing/images/greyline.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000171s ]
+ERR: 无法加载模块:Demo
+
+[ 2016-04-09T19:25:40+08:00 ] 127.0.0.1 /online_meal_ordering/demo/simplify/landing/rs-plugin/assets/timer.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+ERR: 无法加载模块:Demo
+
+[ 2016-04-09T19:25:40+08:00 ] 127.0.0.1 /online_meal_ordering/demo/simplify/landing/rs-plugin/font/revicons.woff?5510888
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000103s ]
+ERR: 无法加载模块:Demo
+
+[ 2016-04-09T19:25:40+08:00 ] 127.0.0.1 /online_meal_ordering/demo/simplify/landing/images/frontend/banner1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000160s ]
+ERR: 无法加载模块:Demo
+
+[ 2016-04-09T19:25:40+08:00 ] 127.0.0.1 /online_meal_ordering/demo/simplify/landing/rs-plugin/font/revicons.ttf?5510888
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+ERR: 无法加载模块:Demo
+
+[ 2016-04-09T19:25:40+08:00 ] 127.0.0.1 /online_meal_ordering/demo/simplify/landing/images/frontend/banner1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000148s ]
+ERR: 无法加载模块:Demo
+
+[ 2016-04-09T19:25:40+08:00 ] 127.0.0.1 /online_meal_ordering/demo/simplify/landing/images/redbg_big.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000141s ]
+ERR: 无法加载模块:Demo
+
+[ 2016-04-09T19:25:40+08:00 ] 127.0.0.1 /online_meal_ordering/demo/simplify/landing/images/frontend/macbook.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000178s ]
+ERR: 无法加载模块:Demo
+
+[ 2016-04-09T19:25:40+08:00 ] 127.0.0.1 /online_meal_ordering/demo/simplify/landing/images/frontend/iMac.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000149s ]
+ERR: 无法加载模块:Demo
+
+[ 2016-04-09T19:25:40+08:00 ] 127.0.0.1 /online_meal_ordering/demo/simplify/landing/images/greyline.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+ERR: 无法加载模块:Demo
+
+[ 2016-04-09T19:25:51+08:00 ] 127.0.0.1 /online_meal_ordering/demo/simplify/landing/rs-plugin/assets/timer.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+ERR: 无法加载模块:Demo
+
+[ 2016-04-09T19:25:52+08:00 ] 127.0.0.1 /online_meal_ordering/demo/simplify/landing/rs-plugin/font/revicons.woff?5510888
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+ERR: 无法加载模块:Demo
+
+[ 2016-04-09T19:25:52+08:00 ] 127.0.0.1 /online_meal_ordering/demo/simplify/landing/images/frontend/banner1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000167s ]
+ERR: 无法加载模块:Demo
+
+[ 2016-04-09T19:25:52+08:00 ] 127.0.0.1 /online_meal_ordering/demo/simplify/landing/rs-plugin/font/revicons.ttf?5510888
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000161s ]
+ERR: 无法加载模块:Demo
+
+[ 2016-04-09T19:25:52+08:00 ] 127.0.0.1 /online_meal_ordering/demo/simplify/landing/images/frontend/banner1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000166s ]
+ERR: 无法加载模块:Demo
+
+[ 2016-04-09T19:25:52+08:00 ] 127.0.0.1 /online_meal_ordering/demo/simplify/landing/images/frontend/macbook.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000166s ]
+ERR: 无法加载模块:Demo
+
+[ 2016-04-09T19:25:52+08:00 ] 127.0.0.1 /online_meal_ordering/demo/simplify/landing/images/redbg_big.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000153s ]
+ERR: 无法加载模块:Demo
+
+[ 2016-04-09T19:25:52+08:00 ] 127.0.0.1 /online_meal_ordering/demo/simplify/landing/images/frontend/iMac.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000155s ]
+ERR: 无法加载模块:Demo
+
+[ 2016-04-09T19:25:52+08:00 ] 127.0.0.1 /online_meal_ordering/demo/simplify/landing/images/greyline.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000155s ]
+ERR: 无法加载模块:Demo
+
+[ 2016-04-09T19:34:19+08:00 ] 127.0.0.1 /online_meal_ordering/demo/simplify/landing/rs-plugin/assets/timer.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+ERR: 无法加载模块:Demo
+
+[ 2016-04-09T19:34:19+08:00 ] 127.0.0.1 /online_meal_ordering/demo/simplify/landing/rs-plugin/font/revicons.woff?5510888
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000128s ]
+ERR: 无法加载模块:Demo
+
+[ 2016-04-09T19:34:19+08:00 ] 127.0.0.1 /online_meal_ordering/demo/simplify/landing/images/frontend/banner1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+ERR: 无法加载模块:Demo
+
+[ 2016-04-09T19:34:19+08:00 ] 127.0.0.1 /online_meal_ordering/demo/simplify/landing/rs-plugin/font/revicons.ttf?5510888
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000190s ]
+ERR: 无法加载模块:Demo
+
+[ 2016-04-09T19:34:19+08:00 ] 127.0.0.1 /online_meal_ordering/demo/simplify/landing/images/frontend/banner1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000179s ]
+ERR: 无法加载模块:Demo
+
+[ 2016-04-09T19:34:19+08:00 ] 127.0.0.1 /online_meal_ordering/demo/simplify/landing/images/redbg_big.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000191s ]
+ERR: 无法加载模块:Demo
+
+[ 2016-04-09T19:34:19+08:00 ] 127.0.0.1 /online_meal_ordering/demo/simplify/landing/images/frontend/macbook.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000171s ]
+ERR: 无法加载模块:Demo
+
+[ 2016-04-09T19:34:19+08:00 ] 127.0.0.1 /online_meal_ordering/demo/simplify/landing/images/frontend/iMac.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+ERR: 无法加载模块:Demo
+
+[ 2016-04-09T19:34:19+08:00 ] 127.0.0.1 /online_meal_ordering/demo/simplify/landing/images/greyline.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000166s ]
+ERR: 无法加载模块:Demo
+
+[ 2016-04-09T19:34:25+08:00 ] 127.0.0.1 /online_meal_ordering/demo/simplify/landing/rs-plugin/assets/timer.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000190s ]
+ERR: 无法加载模块:Demo
+
+[ 2016-04-09T19:34:25+08:00 ] 127.0.0.1 /online_meal_ordering/demo/simplify/landing/rs-plugin/font/revicons.woff?5510888
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000103s ]
+ERR: 无法加载模块:Demo
+
+[ 2016-04-09T19:34:25+08:00 ] 127.0.0.1 /online_meal_ordering/demo/simplify/landing/images/frontend/banner1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+ERR: 无法加载模块:Demo
+
+[ 2016-04-09T19:34:25+08:00 ] 127.0.0.1 /online_meal_ordering/demo/simplify/landing/rs-plugin/font/revicons.ttf?5510888
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000124s ]
+ERR: 无法加载模块:Demo
+
+[ 2016-04-09T19:34:25+08:00 ] 127.0.0.1 /online_meal_ordering/demo/simplify/landing/images/frontend/banner1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000095s ]
+ERR: 无法加载模块:Demo
+
+[ 2016-04-09T19:34:25+08:00 ] 127.0.0.1 /online_meal_ordering/demo/simplify/landing/images/redbg_big.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+ERR: 无法加载模块:Demo
+
+[ 2016-04-09T19:34:25+08:00 ] 127.0.0.1 /online_meal_ordering/demo/simplify/landing/images/frontend/iMac.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000104s ]
+ERR: 无法加载模块:Demo
+
+[ 2016-04-09T19:34:25+08:00 ] 127.0.0.1 /online_meal_ordering/demo/simplify/landing/images/frontend/macbook.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000142s ]
+ERR: 无法加载模块:Demo
+
+[ 2016-04-09T19:34:25+08:00 ] 127.0.0.1 /online_meal_ordering/demo/simplify/landing/images/greyline.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000141s ]
+ERR: 无法加载模块:Demo
+
+[ 2016-04-09T19:34:35+08:00 ] 127.0.0.1 /online_meal_ordering/demo/simplify/landing/rs-plugin/assets/timer.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000173s ]
+ERR: 无法加载模块:Demo
+
+[ 2016-04-09T19:34:35+08:00 ] 127.0.0.1 /online_meal_ordering/demo/simplify/landing/rs-plugin/font/revicons.woff?5510888
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000103s ]
+ERR: 无法加载模块:Demo
+
+[ 2016-04-09T19:34:35+08:00 ] 127.0.0.1 /online_meal_ordering/demo/simplify/landing/images/frontend/banner1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000124s ]
+ERR: 无法加载模块:Demo
+
+[ 2016-04-09T19:34:35+08:00 ] 127.0.0.1 /online_meal_ordering/demo/simplify/landing/rs-plugin/font/revicons.ttf?5510888
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000126s ]
+ERR: 无法加载模块:Demo
+
+[ 2016-04-09T19:34:35+08:00 ] 127.0.0.1 /online_meal_ordering/demo/simplify/landing/images/frontend/banner1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000157s ]
+ERR: 无法加载模块:Demo
+
+[ 2016-04-09T19:34:35+08:00 ] 127.0.0.1 /online_meal_ordering/demo/simplify/landing/images/redbg_big.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000106s ]
+ERR: 无法加载模块:Demo
+
+[ 2016-04-09T19:34:35+08:00 ] 127.0.0.1 /online_meal_ordering/demo/simplify/landing/images/frontend/macbook.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000101s ]
+ERR: 无法加载模块:Demo
+
+[ 2016-04-09T19:34:35+08:00 ] 127.0.0.1 /online_meal_ordering/demo/simplify/landing/images/frontend/iMac.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000168s ]
+ERR: 无法加载模块:Demo
+
+[ 2016-04-09T19:34:35+08:00 ] 127.0.0.1 /online_meal_ordering/demo/simplify/landing/images/greyline.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+ERR: 无法加载模块:Demo
+
