@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
     <!--
     #######################################
@@ -11,7 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
         <meta name="author" content="">
-        <base href="/online_meal_ordering/Public/landing/">
+        <base href="__PUBLIC__/landing/">
 
         <!-- Bootstrap core CSS -->
         <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -73,14 +73,13 @@
                     </li>
                   </ul>
                   <ul class="nav navbar-nav navbar-right">
-                    <li class="btn-link"><a href="/online_meal_ordering/admin/user/index" class="btn btn-sm btn-success">登录</a></li>
+                    <li class="btn-link"><a href="__APP__/admin/user/index" class="btn btn-sm btn-success">登录</a></li>
                   </ul>
                 </nav>
               </div>
             </header>
 
-            Home
-
+            {__CONTENT__}
 
             <footer class="front-end-footer">
                 <div class="container">

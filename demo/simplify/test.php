@@ -5,6 +5,4 @@
     <i class="fa fa-times-circle m-right-xs"></i> <strong>Oh snap!</strong> Change a few things up and try submitting again.
 </div>
 
-
-
 <?php include 'footer.mod'; ?>
