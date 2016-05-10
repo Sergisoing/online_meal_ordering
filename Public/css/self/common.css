@@ -1,4 +1,16 @@
 #alert-div {
-    position: absolute;
+    position: fixed;
+    z-index: 999;
     width: 100%;
+}
+.shenglv {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.common-font {
+    font: 12px/1.2 "Hiragino Sans GB",arial,Verdana,tahoma,"\5b8b\4f53",sans-serif;
+    color: #666;
+    -webkit-font-smoothing: antialiased;
 }

@@ -1,0 +1,323 @@
+<link href="../css/datepicker-custom.css" rel="stylesheet">
+<script src="../js/bootstrap-datepicker.js"></script>
+<style type="text/css">
+.h-80 {
+    height: 80px;
+}
+.l-80 {
+    line-height: 80px;
+}
+.table-cell {
+    display: table-cell;
+}
+.display-table {
+    display: table;
+}
+.width-col-5 {
+    width:41.66666667%;
+}
+.width-col-3 {
+    width:25%;
+}
+.width-col-2 {
+    width: 16.66666667%;
+}
+.width-col-1 {
+    width: 8.33333333%;
+}
+.table-fixed {
+    table-layout: fixed;
+}
+.order-table {
+    border-top: 1px solid #ddd !important;
+}
+.w-150 {
+    width: 150px;
+}
+.no-l-padding {
+    padding-left: 0px !important;
+}
+.img-wrap {
+    float: left;
+}
+.title-wrap {
+    margin-left: 150px;
+}
+.ve-middle {
+    vertical-align: middle!important;
+}
+.order-table td{
+    overflow: hidden;
+}
+.kind-div {
+    border: 1px solid #eee;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.kind-item {
+    line-height: 36px;
+    text-align: center;
+    border-right: 1px solid #eee;
+}
+.kind-item:hover {
+    background: #32c5cd;
+    color: white;
+    cursor: pointer;
+}
+.kind-item-checked {
+    background: #32c5cd;
+    color: white;
+    text-align: center;
+}
+.demo,.none-data {
+    display: none;
+}
+.heart {
+    color: rgba(208, 34, 34, 0.88);
+}
+</style>
+
+<div class="section m-bottom-lg" id="featureSection">
+    <div class="container">
+        <h3 class="header-text m-bottom-md">
+                <i class="fa fa-file-text-o"></i>&nbsp;&nbsp;我的订单
+            <span class="sub-header">
+                My Orders
+            </span>
+        </h3>
+        <div class="col-sm-12 no-padding">
+            <div class="kind-div bg-white">
+                <a href="javascript: void(0)" class="col-md-1 kind-item" data-sort="noon">中餐</a>
+                <a href="javascript: void(0)" class="col-md-1 kind-item" data-sort="night">晚餐</a>
+                <div class="col-md-2 no-padding m-left-xs" style="margin-top: 4px;">
+                    <input class="form-control form-control-inline text-center font-16 input-sm order-date" size="16" type="text" value="{$order_date}" readonly placeholder="请选择订餐日期">
+                </div>
+            </div>
+        </div>
+        <table class="table order-table table-hover">
+            <thead class="bg-white">
+                <tr>
+                    <th class="text-center width-col-2 no-padding border-left border-right"><h5>图片</h5></th>
+                    <th class="text-center width-col-2 no-padding border-left border-right"><h5>商品</h5></th>
+                    <th class="text-center width-col-3 no-padding border-left border-right"><h5>店铺</h5></th>
+                    <th class="text-center width-col-1 no-padding border-left border-right"><h5>数量</h5></th>
+                    <th class="text-center width-col-2 no-padding border-left border-right"><h5>订单状态</h5></th>
+                    <th class="text-center width-col-1 no-padding border-left border-right"><h5>操作</h5></th>
+                </tr>
+            </thead>
+                <tr class="border-bottom demo">
+                    <td class="h-80 text-center">
+                        <img src="../images/dish/2016-04-27/5720a57cafe43.jpg" alt="" class="h-80">
+                    </td>
+                    <td class="h-80 text-center ve-middle">
+                        <a class="font-14" href="">柴味鱼</a>
+                    </td>
+                    <td class="font-14 h-80 text-center ve-middle">
+                        <a href="" class="font-14">重庆美食坊2-炒菜-湘菜</a>
+                    </td>
+                    <td class="font-14 h-80 text-center ve-middle">
+                        1
+                    </td>
+                    <td class="font-14 h-80 text-center ve-middle">
+                        已完成
+                    </td>
+                    <td class="h-80 text-center ve-middle">
+                        <a href="#commentModel" data-toggle="modal" class="btn comment btn-default font-14 text-danger">评价</a>
+                    </td>
+                </tr>
+                <tr class="none-data">
+                    <td colspan="7" class="text-center"><h5>您当前还没有订餐记录,快去<a class="font-18 text-info" href="__APP__/home/">订餐</a>吧~</h5></td>
+                </tr>
+            <tbody></tbody>
+        </table>
+    </div><!-- ./container -->
+</div>
+
+
+
+<div class="modal fade" id="commentModel">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">评论</h4>
+            </div>
+            <div class="modal-body">
+                <form role="form">
+                    <div class="col-sm-12 no-padding">
+                        <p class="start">
+                            <label class="control-label">喜欢系数：</label>
+                            <label class="control-label heart">
+                                <i class="fa fa-heart-o"></i>
+                                <i class="fa fa-heart-o"></i>
+                                <i class="fa fa-heart-o"></i>
+                                <i class="fa fa-heart-o"></i>
+                                <i class="fa fa-heart-o"></i>
+                            </label>
+                        </p>
+                    </div>
+                    <div class="input-group form-group">
+                        <input type="text" name="comment" class="form-control" id="inputEmailModal" placeholder="请输入您的意见">
+                        <div class="input-group-btn">
+                            <button type="button" data-dismiss="modal" class="btn btn-success no-shadow" tabindex="-1" id="saveComment"><i class="fa fa-save m-right-xs"></i>保存</button>
+                        </div>
+                    </div>
+                </form>
+                <p class="text-danger err-msg"></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+$(function () {
+    $('.order-date').datepicker({
+        format: 'yyyy-mm-dd'
+    });
+
+    var orderList = {
+        orderData: null,
+        currentId: null,
+        confirmHeart: false,
+        currentItem: null,
+        updateList: function () {
+            $('.new').remove();
+            if (!this.orderData || (_type(this.orderData) == 'array' && this.orderData.length == '0')) {
+                $('.none-data').css('display', 'table-row');
+                return false;
+            }
+            $('.none-data').css('display', 'none');
+            var obj = this.orderData;
+            for (var k in obj ) {
+                var item = $('.demo').clone();
+                var tds = item.find('td');
+                tds.eq(0).children('img').prop('src', '../images/' + obj[k].picture);
+                tds.eq(1).children('a').text(obj[k].dish_name).attr('href', '__APP__/home/dish/detail/id/' + obj[k].dish_id);
+                tds.eq(2).children('a').text(obj[k].store_name).attr('href', '__APP__/home/dish/index/id/' + obj[k].store_id );
+                tds.eq(3).text(obj[k].count);
+                if (obj[k].order_status == 'new'){
+                    var status = '等待订餐';
+                } else if (obj[k].order_status == 'finish') {
+                    var status = '已完成';
+                } else if (obj[k].order_status == 'ordering') {
+                    var status = '正在派送中';
+                }
+                tds.eq(4).text(obj[k].status);
+                if (obj[k].comment == '') {
+                    tds.eq(5).children('a').data('id', obj[k].menu_dish_id);
+                } else {
+                    tds.eq(5).text('已评论');
+                }
+
+                item.insertBefore('.demo').removeClass('demo').addClass('new');
+            }
+        },
+        loadData: function (sort, date) {
+            var data = {};
+            data.mealTime = sort;
+            data.orderDate = date;
+            $.post('__APP__/home/order/getMyOrder', data, function (res) {
+                switch (res.status) {
+                    case 'ok':
+                        orderList.orderData = res.data;
+                        orderList.updateList();
+                        break;
+                    case 'error':
+                        Common.alertDialog(res.data);
+                        break;
+                    case 'redirect':
+                        location.href = res.data;
+                        break;
+                }
+            }, 'json')
+            .error(function () {
+                Common.alertDialog('网络错误，请稍后再试');
+            });
+        },
+        bindEvent: function () {
+            $('.kind-item').on('click', function () {
+                if ($(this).hasClass('kind-item-checked')) {
+                    return false;
+                }
+
+                $('.kind-item-checked').removeClass('kind-item-checked');
+                $(this).addClass('kind-item-checked');
+                var date = $('.order-date').val();
+                orderList.loadData($(this).data('sort'), date);
+            });
+
+            $('.datepicker-days').on('click', 'td', function () {
+                $('.order-date').blur();
+                setTimeout(function () {
+                    orderList.loadData($('.kind-item-checked').data('sort') ,$('.order-date').val());
+                }, 200);
+            });
+
+            $('.heart>i').on('mouseover',  function () {
+                if (orderList.confirmHeart) {
+                    return false;
+                }
+                $('.heart>i').removeClass('fa-heart').addClass('fa-heart-o');
+                $('.heart>i:lt('+ ($(this).index() + 1) +')').removeClass('fa-heart-o').addClass('fa-heart');
+            });
+
+            $('.heart>i').on('mouseout',  function () {
+                if (orderList.confirmHeart) {
+                    return false;
+                }
+                $('.heart>i').removeClass('fa-heart').addClass('fa-heart-o');
+            });
+
+            $('.heart>i').on('click', function () {
+                orderList.confirmHeart = true;
+                $('.heart>i:lt('+ ($(this).index() + 1) +')').removeClass('fa-heart-o').addClass('fa-heart');
+            });
+
+            $('body').on('click','.comment', function () {
+                orderList.confirmHeart = false;
+                orderList.currentItem = $(this);
+                orderList.currentId = $(this).data('id');
+                $('.heart>i').removeClass('fa-heart').addClass('fa-heart-o');
+                $('input[name=comment]').val('');
+            });
+
+            $('#saveComment').on('click', function () {
+                var data = {};
+                data.score = $('.heart>i.fa-heart:last').index() + 1;
+                data.comment = $('input[name=comment]').val();
+                data.id = orderList.currentId;
+                if (data.comment == '') {
+                    Common.alertDialog('评论内容不能为空');
+                }
+                $.post('__APP__/home/order/saveComment', data, function (res) {
+                    switch (res.status) {
+                    case 'ok':
+                        Common.alertDialog('评论成功');
+                        orderList.currentItem.parent('td').html('已评论');
+                        break;
+                    case 'error':
+                        Common.alertDialog(res.data);
+                        break;
+                    case 'redirect':
+                        location.href = res.data;
+                        break;
+                }
+                }, 'json')
+                .error(function () {
+                    Common.alertDialog('网络错误，请稍后再试');
+                });
+            });
+
+        },
+        init: function () {
+            this.bindEvent();
+            $('.order-date').val((new Date()).Format('yyyy-MM-dd'));
+            $('.kind-item').eq(0).trigger('click');
+        }
+    };
+    orderList.init();
+
+
+});
+</script>

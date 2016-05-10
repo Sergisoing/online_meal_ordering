@@ -1,0 +1,455 @@
+<ul class="breadcrumb">
+    <li><span class="primary-font"><i class="icon-home"></i></span><a href="index.html"></a>员工账户管理</li>
+    <li>账户管理</li>
+</ul>
+<div class="row">
+    <div class="col-md-6">
+        <div class="smart-widget widget-dark-blue">
+            <div class="smart-widget-header">
+                单个添加用户
+                <span class="smart-widget-option">
+                    <span class="refresh-icon-animated">
+                        <i class="fa fa-circle-o-notch fa-spin"></i>
+                    </span>
+                    <a href="#" class="widget-toggle-hidden-option">
+                        <i class="fa fa-cog"></i>
+                    </a>
+                    <a href="#" class="widget-collapse-option" data-toggle="collapse">
+                        <i class="fa fa-chevron-up"></i>
+                    </a>
+                    <a href="#" class="widget-refresh-option">
+                        <i class="fa fa-refresh"></i>
+                    </a>
+                    <a href="#" class="widget-remove-option">
+                        <i class="fa fa-times"></i>
+                    </a>
+                </span>
+            </div>
+            <div class="smart-widget-inner">
+                <div class="smart-widget-hidden-section">
+                    <ul class="widget-color-list clearfix">
+                        <li style="background-color:#20232b;" data-color="widget-dark"></li>
+                        <li style="background-color:#4c5f70;" data-color="widget-dark-blue"></li>
+                        <li style="background-color:#23b7e5;" data-color="widget-blue"></li>
+                        <li style="background-color:#2baab1;" data-color="widget-green"></li>
+                        <li style="background-color:#edbc6c;" data-color="widget-yellow"></li>
+                        <li style="background-color:#fbc852;" data-color="widget-orange"></li>
+                        <li style="background-color:#e36159;" data-color="widget-red"></li>
+                        <li style="background-color:#7266ba;" data-color="widget-purple"></li>
+                        <li style="background-color:#f5f5f5;" data-color="widget-light-grey"></li>
+                        <li style="background-color:#fff;" data-color="reset"></li>
+                    </ul>
+                </div>
+                <div class="smart-widget-body">
+                    <form id="single-form" class="form-horizontal no-margin" id="basic-constraint" data-validate="parsley" novalidate="" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label class="control-label col-lg-3">姓名</label>
+                            <div class="col-lg-6">
+                                <input type="text" name="name" class="form-control input-sm" data-parsley-required="true" placeholder="请输入姓名">
+                                <div id="errorMessageArea1"></div>
+                            </div><!-- /.col -->
+                        </div><!-- /form-group -->
+                        <div class="form-group">
+                            <label class="control-label col-lg-3">员工编号</label>
+                            <div class="col-lg-6">
+                                <input type="text" name="emp_no" class="form-control input-sm" data-parsley-required="true" placeholder="请输入员工编号">
+                                <div id="errorMessageArea2"></div>
+                            </div><!-- /.col -->
+                        </div><!-- /form-group -->
+
+                        <div class="form-group">
+                            <label class="control-label col-lg-3">部门</label>
+                            <div class="col-lg-4">
+                                <select class="form-control" name="dep_id">
+                                    <foreach name="depList" item="v">
+                                    <option value="{$v.id}">{$v.dep_name}</option>
+                                    </foreach>
+                                </select>
+                            </div><!-- /.col -->
+                        </div><!-- /form-group -->
+
+                        <div class="form-group">
+                            <label class="control-label col-lg-3">性别</label>
+                            <div class="col-lg-6">
+                                <div class="radio inline-block">
+                                    <div class="custom-radio m-right-xs">
+                                        <input type="radio" value="0" id="inlineRadio1" checked name="sex">
+                                        <label for="inlineRadio1"></label>
+                                    </div>
+                                    <div class="inline-block vertical-top">男</div>
+                                </div>
+                                <div class="radio inline-block">
+                                    <div class="custom-radio m-right-xs">
+                                        <input type="radio" value="1" id="inlineRadio2" name="sex">
+                                        <label for="inlineRadio2"></label>
+                                    </div>
+                                    <div class="inline-block vertical-top">女</div>
+                                </div>
+                            </div>
+                        </div><!-- /form-group -->
+
+                        <div class="form-group">
+                            <label class="control-label col-lg-3">电话</label>
+                            <div class="col-lg-6">
+                                <input type="tel" name="phone" class="form-control input-sm" data-parsley-required="true" maxlength="11" placeholder="请输入员工手机号码">
+                                <div id="errorMessageArea3"></div>
+                            </div><!-- /.col -->
+                        </div><!-- /form-group -->
+
+                        <div class="form-group">
+                            <label class="control-label col-lg-3">密码</label>
+                            <div class="col-lg-6">
+                                <input type="password" name="password" class="form-control input-sm" data-parsley-required="true" maxlength="11" placeholder="请输入员工密码">
+                                <div id="errorMessageArea4"></div>
+                            </div><!-- /.col -->
+                        </div><!-- /form-group -->
+
+                        <div class="form-group">
+                            <label class="control-label col-lg-3">邮箱</label>
+                            <div class="col-lg-6">
+                                <input type="email" name="email" class="form-control input-sm" data-parsley-required="true" placeholder="请输入员工邮箱">
+                                <div id="errorMessageArea5"></div>
+                            </div><!-- /.col -->
+                        </div><!-- /form-group -->
+
+                        <div class="form-group">
+                            <label class="control-label col-lg-3">头像</label>
+                            <div class="col-lg-6">
+                                <input type="file" name="email" class="form-control input-sm" >
+                                <div id="errorMessageArea6"></div>
+                            </div><!-- /.col -->
+                        </div><!-- /form-group -->
+
+                        <div class="text-right m-top-md">
+                            <button type="button" class="btn btn-info" id="single-add">添加</button>
+                        </div>
+                    </form>
+                </div>
+            </div><!-- ./smart-widget-inner -->
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="smart-widget widget-dark-blue">
+            <div class="smart-widget-header">
+                多个用户添加
+                <span class="smart-widget-option">
+                    <span class="refresh-icon-animated">
+                        <i class="fa fa-circle-o-notch fa-spin"></i>
+                    </span>
+                    <a href="#" class="widget-toggle-hidden-option">
+                        <i class="fa fa-cog"></i>
+                    </a>
+                    <a href="#" class="widget-collapse-option" data-toggle="collapse">
+                        <i class="fa fa-chevron-up"></i>
+                    </a>
+                    <a href="#" class="widget-refresh-option">
+                        <i class="fa fa-refresh"></i>
+                    </a>
+                    <a href="#" class="widget-remove-option">
+                        <i class="fa fa-times"></i>
+                    </a>
+                </span>
+            </div>
+            <div class="smart-widget-inner">
+                <div class="smart-widget-hidden-section">
+                    <ul class="widget-color-list clearfix">
+                        <li style="background-color:#20232b;" data-color="widget-dark"></li>
+                        <li style="background-color:#4c5f70;" data-color="widget-dark-blue"></li>
+                        <li style="background-color:#23b7e5;" data-color="widget-blue"></li>
+                        <li style="background-color:#2baab1;" data-color="widget-green"></li>
+                        <li style="background-color:#edbc6c;" data-color="widget-yellow"></li>
+                        <li style="background-color:#fbc852;" data-color="widget-orange"></li>
+                        <li style="background-color:#e36159;" data-color="widget-red"></li>
+                        <li style="background-color:#7266ba;" data-color="widget-purple"></li>
+                        <li style="background-color:#f5f5f5;" data-color="widget-light-grey"></li>
+                        <li style="background-color:#fff;" data-color="reset"></li>
+                    </ul>
+                </div>
+                <div class="smart-widget-body">
+                    <form class="form-horizontal no-margin" id="basic-constraint" data-validate="parsley" novalidate="">
+                         <div class="form-group">
+                            <label class="control-label col-lg-3">员工起始编号</label>
+                            <div class="col-lg-6">
+                                <input type="number" name="emp_no_start" class="form-control input-sm" placeholder="请输入员工起始编号">
+                                <div id="errorMessageArea7"></div>
+                            </div><!-- /.col -->
+                        </div><!-- /form-group -->
+
+                        <div class="form-group">
+                            <label class="control-label col-lg-3">员工个数</label>
+                            <div class="col-lg-6">
+                                <input type="number" name="emp_no_num" class="form-control input-sm" placeholder="请输入员工个数">
+                                <div id="errorMessageArea8"></div>
+                            </div><!-- /.col -->
+                        </div><!-- /form-group -->
+
+                        <div class="form-group">
+                            <label class="control-label col-lg-3">密码</label>
+                            <div class="col-lg-6">
+                                <input type="password" name="password" class="form-control input-sm" placeholder="请输入账户密码">
+                                <div id="errorMessageArea9"></div>
+                            </div><!-- /.col -->
+                        </div><!-- /form-group -->
+
+                        <div class="form-group">
+                            <label class="control-label col-lg-3">部门</label>
+                            <div class="col-lg-4">
+                                <select class="form-control" name="dep_id">
+                                    <foreach name="depList" item="v">
+                                    <option value="{$v.id}">{$v.dep_name}</option>
+                                    </foreach>
+                                </select>
+                            </div><!-- /.col -->
+                        </div><!-- /form-group -->
+
+
+                        <div class="col-sm-12">
+                            <ul>
+                                <li>1.从员工其实编号开始自动生成员工个数个账户</li>
+                                <li>2.生成所有账户的密码都是填写的密码</li>
+                                <li>3.其他信息需要员工自己填写</li>
+                            </ul>
+                        </div>
+
+                        <div class="text-right m-top-md">
+                            <button type="button" class="btn btn-info" id="multi_add">添加</button>
+                        </div>
+                    </form>
+                </div>
+            </div><!-- ./smart-widget-inner -->
+        </div>
+    </div>
+</div>
+
+<div class="smart-widget widget-dark-blue">
+    <div class="smart-widget-header">
+        员工账户列表
+        <span class="smart-widget-option">
+            <span class="refresh-icon-animated">
+                <i class="fa fa-circle-o-notch fa-spin"></i>
+            </span>
+            <a href="#" class="widget-toggle-hidden-option">
+                <i class="fa fa-cog"></i>
+            </a>
+            <a href="#" class="widget-collapse-option" data-toggle="collapse">
+                <i class="fa fa-chevron-up"></i>
+            </a>
+            <a href="#" class="widget-refresh-option">
+                <i class="fa fa-refresh"></i>
+            </a>
+            <a href="#" class="widget-remove-option">
+                <i class="fa fa-times"></i>
+            </a>
+        </span>
+    </div>
+    <div class="smart-widget-inner">
+        <div class="smart-widget-hidden-section">
+            <ul class="widget-color-list clearfix">
+                <li style="background-color:#20232b;" data-color="widget-dark"></li>
+                <li style="background-color:#4c5f70;" data-color="widget-dark-blue"></li>
+                <li style="background-color:#23b7e5;" data-color="widget-blue"></li>
+                <li style="background-color:#2baab1;" data-color="widget-green"></li>
+                <li style="background-color:#edbc6c;" data-color="widget-yellow"></li>
+                <li style="background-color:#fbc852;" data-color="widget-orange"></li>
+                <li style="background-color:#e36159;" data-color="widget-red"></li>
+                <li style="background-color:#7266ba;" data-color="widget-purple"></li>
+                <li style="background-color:#f5f5f5;" data-color="widget-light-grey"></li>
+                <li style="background-color:#fff;" data-color="reset"></li>
+            </ul>
+        </div>
+        <div class="smart-widget-body">
+            <assign name="tableindex" value="1" />
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>员工编号</th>
+                        <th>姓名</th>
+                        <th>电话</th>
+                        <th>部门</th>
+                        <th>性别</th>
+                        <th>头像</th>
+                        <th>邮箱</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <foreach name="userList" item="v">
+                    <tr>
+                        <td>{$tableindex++}</td>
+                        <td>{$v['emp_no']}</td>
+                        <td>{$v['name']}</td>
+                        <td>{$v['phone']}</td>
+                        <td>{$v['dep_name']}</td>
+                        <td>{$v['sex']==0?'男':'女'}</td>
+                        <td>{$v['headimg']}</td>
+                        <td>{$v['email']}</td>
+                        <td style="width: 120px;">
+                            <div class="btn-group">
+                                <a href="#resetPwModel" data-toggle="modal" class="reset btn btn-primary btn-xs" data-id="{$v['id']}">重置密码</a>
+                                <a href="javascript:void(0)" class="delete btn btn-danger btn-xs" data-id="{$v['id']}" >删除</a>
+                            </div>
+                        </td>
+                    </tr>
+                    </foreach>
+                    <notpresent name="userList">
+                    <tr id="noneData">
+                        <td colspan="9" class="text-center">暂时没有用户数据</td>
+                    </tr>
+                    </notpresent>
+                </tbody>
+            </table>
+        </div>
+    </div><!-- ./smart-widget-inner -->
+</div>
+
+<div class="modal fade" id="resetPwModel">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">重置密码</h4>
+            </div>
+            <div class="modal-body">
+                <form role="form">
+                    <div class="input-group form-group">
+                        <input type="password" name="newpw" class="form-control" id="inputEmailModal" placeholder="请输入新密码(6位以上的英文字母或者数字)">
+                        <div class="input-group-btn">
+                            <button type="button" class="btn btn-success no-shadow" tabindex="-1" id="savePw"><i class="fa fa-save m-right-xs"></i>保存</button>
+                        </div>
+                    </div>
+                </form>
+                <p class="text-danger err-msg"></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+$(function () {
+    var resId = 0;
+    $('.reset').on('click', function () {
+        resId = $(this).data('id');
+    });
+    $('#savePw').on('click', function () {
+        var newPw = $('input[name=newpw]').val();
+        if (!(/^[\w]{6,}$/.test(newPw))) {
+            $('.err-msg').text('密码格式不正确');
+            return false;
+        }
+        $('.err-msg').text('');
+        var data = {};
+        data.id = resId;
+        data.pw = newPw;
+        Common.buttonPost($(this), '__APP__/admin/user/resetPw', data, function (res) {
+            if (res.status == 'ok') {
+                $('.close').trigger('click');
+                Common.successAlert('修改密码成功');
+            }
+        });
+    });
+    $('.delete').on('click', function () {
+        if (!confirm('确认删除该账户?')) {
+            return false;
+        }
+        $.post('__APP__/admin/user/deleteUser', {id: $(this).data('id')}, function() {}, 'json').error(function () {
+            Common.dangerAlert('网络错误，请稍后再试');
+        }).success(function (res) {
+            if (res.status == 'ok') {
+                Common.successAlert('删除成功');
+                location.reload();
+            }
+        });
+    });
+
+
+    var single = {
+        get formData() {
+            return new FormData($('#single-form')[0]);
+        },
+        bindEvent: function () {
+            $('#single-add').on('click', function () {
+                $.ajax({
+                    url: '__APP__/admin/user/singleAdd',
+                    type: 'POST',
+                    dataType: 'json',
+                    data: single.formData,
+                    processData: false,
+                    contentType: false,
+                    cache: false
+                })
+                .done(function(res) {
+                    if (res.status == 'error') {
+                        Common.warningAlert(res.data);
+                    } else {
+                        Common.successAlert('添加成功');
+                        location.reload();
+                    }
+                })
+                .error(function () {
+                    Common.successAlert('网络错误，请稍后再试');
+                });
+                return false;
+            });
+        },
+        init: function () {
+            this.bindEvent();
+        }
+    };
+
+    var multi = {
+        get start() {
+            return $('input[name=emp_no_start]').val();
+        },
+        set start(value) {
+            $('input[name=emp_no_start]').val(value);
+        },
+        get length() {
+            return $('input[name=emp_no_num]').val();
+        },
+        set lenght(value) {
+            $('input[name=emp_no_num]').val(value);
+        },
+        get password() {
+            return $('input[name=password]').val()
+        },
+        set password(value) {
+            $('input[name=password]').val(value);
+        },
+        set dep_id(value) {
+            $('input[name=dep_id]').val(value);
+        },
+        get dep_id() {
+            return $('input[name=dep_id]').val();
+        },
+        bindEvent: function () {
+            $('#multi_add').on('click', function () {
+                $.ajax({
+                    url: '__APP__/admin/user/multiAdd',
+                    type: 'POST',
+                    dataType: 'json',
+                    data: {dep_id: multi.dep_id, start: multi.start, length: multi.length, password: multi.password},
+                })
+                .done(function(res) {
+                    if (res.status == 'ok') {
+
+                    } else {
+                        // Common.successAlert(res.data);
+                    }
+                })
+                .error(function () {
+                    Common.warningAlert('网络错误，请稍后再试');
+                });
+
+            });
+        },
+        init: function () {
+            this.bindEvent();
+        }
+    }
+    multi.init();
+
+
+});
+</script>

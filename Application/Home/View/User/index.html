@@ -1,0 +1,448 @@
+<style type="text/css">
+.pannel{
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    border: none;
+    position: relative;
+}
+.pannel-body {
+    padding: 15px;
+}
+.headimg {
+    width: 150px;
+    border-radius: 50%;
+}
+.bg-edit-img {
+    background:rgba(88,88,88,0.2);
+    color: white;
+    position: relative;
+    top: -30px;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    width: 150px;
+}
+.headimg-edit-div {
+    display: none;
+    cursor: pointer;
+    height: 0;
+}
+ul.p-info {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+ul.p-info .title {
+    width: 40%;
+    float: left;
+}
+ul.p-info .desk {
+    width: 60%;
+    float: left;
+    color: #65cea7;
+}
+.p-bottom-sm {
+    padding-bottom: 15px;
+    overflow: hidden;
+}
+.pannel-header {
+    position: absolute;
+    right: 15px;
+    top: 5px;
+}
+.widget-stat:hover {
+    background: #eee;
+    cursor: pointer;
+}
+.none {
+    display: none;
+}
+</style>
+
+<div class="section m-bottom-lg" id="featureSection">
+    <div class="container">
+        <h3 class="header-text m-bottom-md">
+                <i class="fa fa-user"></i>&nbsp;&nbsp;个人中心
+            <span class="sub-header">
+                Personal
+            </span>
+        </h3>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="pannel">
+                    <div class="pannel-body headdiv">
+                        <div class="profile-pic text-center">
+                            <img alt="" class="headimg" src="../{$Think.session.headimg}">
+                        </div>
+                        <div class="text-center headimg-edit-div">
+                            <a href="#changeHeadimg" data-toggle="modal" class="bg-edit-img">修改头像</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pannel">
+                    <div class="pannel-header m-right-sm text-right"><a class="edit" href="javascript: void(0)"><i class="fa fa-edit"></i>&nbsp;&nbsp;编辑</a></div>
+                    <div class="pannel-body p-bottom-sm">
+                        <div class="no-padding col-sm-3"><p class="common-font">员工编号：</p></div>
+                        <div class="no-padding col-sm-8"><p class="common-font">{$Think.session.emp_no}</p></div>
+                        <div class="no-padding col-sm-3"><p class="common-font">昵称：</p></div>
+                        <div class="no-padding col-sm-8"><p class="common-font">{$Think.session.name}</p></div>
+                        <div class="no-padding col-sm-3"><p class="common-font">电话：</p></div>
+                        <div class="no-padding col-sm-8"><p class="common-font">{$Think.session.phone}</p></div>
+                        <div class="no-padding col-sm-3"><p class="common-font">部门：</p></div>
+                        <div class="no-padding col-sm-8"><p class="common-font">{$Think.session.department}</p></div>
+                        <div class="no-padding col-sm-3"><p class="common-font">性别：</p></div>
+                        <div class="no-padding col-sm-8"><p class="common-font">{$Think.session.sex}</p></div>
+                        <div class="no-padding col-sm-3"><p class="common-font">邮箱：</p></div>
+                        <div class="no-padding col-sm-8"><p class="common-font">{$Think.session.email}</p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-8 no-padding edit-div none">
+                <div class="pannel">
+                    <div class="pannel-body">
+                        <div class="smart-widget-body">
+                            <form class="form-horizontal no-margin" id="type-constraint" data-validate="parsley" novalidate="">
+                                <div class="form-group">
+                                    <label class="control-label col-lg-2">昵称：</label>
+                                    <div class="col-lg-9">
+                                        <input type="text" name="name" class="form-control input-sm" data-parsley-type="email" value="{$Think.session.name}" placeholder="请输入昵称">
+                                    </div><!-- /.col -->
+                                </div><!-- /form-group -->
+                                <div class="form-group">
+                                    <label class="control-label col-lg-2">电话号码：</label>
+                                    <div class="col-lg-9">
+                                        <input type="text" name="phone" value="{$Think.session.phone}" class="form-control input-sm" placeholder="请输入电话号码">
+                                    </div><!-- /.col -->
+                                </div><!-- /form-group -->
+                                <div class="form-group">
+                                    <label class="control-label col-lg-2">部门：</label>
+                                    <div class="col-lg-9">
+                                        <select name="department" class="form-control">
+                                            <foreach name="depList" item="v" key="k">
+                                            <option value="{$v.id}">{$v.dep_name}</option>
+                                            </foreach>
+                                        </select>
+                                    </div><!-- /.col -->
+                                </div><!-- /form-group -->
+                                <div class="form-group">
+                                    <label class="control-label col-lg-2">性别：</label>
+                                    <div class="col-lg-9">
+                                        <div class="radio inline-block">
+                                            <div class="custom-radio m-right-xs">
+                                                <input type="radio" value="0" id="inlineRadio1" name="sex">
+                                                <label for="inlineRadio1"></label>
+                                            </div>
+                                            <div class="inline-block vertical-top">男</div>
+                                        </div>
+                                        <div class="radio inline-block">
+                                            <div class="custom-radio m-right-xs">
+                                                <input type="radio" value="1" id="inlineRadio2" name="sex">
+                                                <label for="inlineRadio2"></label>
+                                            </div>
+                                            <div class="inline-block vertical-top">女</div>
+                                        </div>
+                                    </div><!-- /.col -->
+                                </div><!-- /form-group -->
+                                <div class="form-group">
+                                    <label class="control-label col-lg-2">邮箱：</label>
+                                    <div class="col-lg-9">
+                                        <input type="text" class="form-control input-sm" data-parsley-type="number" name="email" value="{$Think.session.email}" placeholder="请输入邮箱">
+                                    </div><!-- /.col -->
+                                </div><!-- /form-group -->
+
+                                <div class="text-right m-top-md">
+                                    <button type="submit" class="return btn btn-info">返回</button>
+                                    <button type="submit" id="saveEdit" class="btn btn-info">保存</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-8 no-padding nav-div">
+                <div class="widget-stat clearfix">
+                    <span class="stat-icon bg-info bounceIn animation-delay3"><i class="fa fa-file-text-o"></i></span>
+                    <div class="stat-info">
+                        <small class="text-muted">Today Order</small>
+                        <span>今日订餐</span>
+                    </div>
+                </div>
+                <div class="widget-stat clearfix">
+                    <span class="stat-icon bg-info bounceIn animation-delay3"><i class="fa fa-calendar-o"></i></span>
+                    <div class="stat-info">
+                        <small class="text-muted">Order Plans</small>
+                        <span>订餐计划</span>
+                    </div>
+                </div>
+                <div class="widget-stat clearfix">
+                    <span class="stat-icon bg-info bounceIn animation-delay3"><i class="fa fa-star"></i></span>
+                    <div class="stat-info">
+                        <small class="text-muted">Favorites</small>
+                        <span>收藏夹</span>
+                    </div>
+                </div>
+                <div class="widget-stat clearfix">
+                    <span class="stat-icon bg-info bounceIn animation-delay3"><i class="fa fa-file"></i></span>
+                    <div class="stat-info">
+                        <small class="text-muted">My Orders</small>
+                        <span>我的订单</span>
+                    </div>
+                </div>
+                <div class="widget-stat clearfix">
+                    <span class="stat-icon bg-info bounceIn animation-delay3"><i class="fa fa-edit"></i></span>
+                    <div class="stat-info">
+                        <small class="text-muted">Change Password</small>
+                        <span>修改密码</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-8 no-padding none pw-div">
+                <div class="pannel">
+                    <div class="pannel-body">
+                        <div class="smart-widget-body">
+                            <form class="form-horizontal no-margin" id="type-constraint" data-validate="parsley" novalidate="">
+                                <div class="form-group">
+                                    <label class="control-label col-lg-2">原密码：</label>
+                                    <div class="col-lg-9">
+                                        <input type="password" name="origin-pw" class="form-control input-sm" data-parsley-type="email" value="" placeholder="请输入原密码">
+                                    </div><!-- /.col -->
+                                </div><!-- /form-group -->
+                                <div class="form-group">
+                                    <label class="control-label col-lg-2">新密码：</label>
+                                    <div class="col-lg-9">
+                                        <input type="password" name="new-pw" class="form-control input-sm" data-parsley-type="email" value="" placeholder="请输入新密码">
+                                    </div><!-- /.col -->
+                                </div><!-- /form-group -->
+                                <div class="form-group">
+                                    <label class="control-label col-lg-2">确认密码：</label>
+                                    <div class="col-lg-9">
+                                        <input type="password" name="confirm-pw" class="form-control input-sm" data-parsley-type="email" value="" placeholder="请重复新密码">
+                                    </div><!-- /.col -->
+                                </div><!-- /form-group -->
+                                <div class="text-right m-top-md">
+                                    <button type="submit" class="return btn btn-info">返回</button>
+                                    <button type="submit" id="savePw" class="btn btn-info">保存</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="changeHeadimg">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">修改头像</h4>
+            </div>
+            <div class="modal-body">
+                <form id="head-img-form" class="form-horizontal no-margin" id="basic-constraint" data-validate="parsley" novalidate="" enctype="multipart/form-data">
+                    <div class="input-group form-group">
+                        <input type="file" name="picture" class="form-control" id="inputEmailModal" placeholder="">
+                        <div class="input-group-btn">
+                            <button type="button" class="btn btn-success no-shadow" tabindex="-1" id="saveImg"><i class="fa fa-save m-right-xs"></i>保存</button>
+                        </div>
+                    </div>
+                </form>
+                <p class="text-danger err-msg"></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script type="text/javascript">
+
+$(function () {
+    $('.headdiv').on('mouseover', function () {
+        // if ($('.headimg-edit-div').css('display') == 'none') {
+            $('.headimg-edit-div').fadeIn();
+        // }
+    })
+    .on('mouseleave', function () {
+        // if ($('.headimg-edit-div').css('display') == 'block') {
+            $('.headimg-edit-div').fadeOut();
+        // }
+    });
+
+
+    $('#saveImg').on('click', function () {
+
+        if ($('input[name=picture]').val() == '') {
+            $('.err-msg').text('请选择头像图片');
+            return false;
+        }
+
+
+        var form = new FormData($('#head-img-form')[0]);
+        $.ajax({
+            url: '__APP__/home/user/updateImg',
+            type: 'POST',
+            dataType: 'json',
+            data: form,
+            processData: false,
+            contentType: false,
+            cache: false
+        })
+        .done(function(res) {
+            switch (res.status) {
+                case 'ok':
+                    Common.alertDialog('修改成功', function () {
+                        location.reload();
+                    });
+                    break;
+                case 'error':
+                    Common.alertDialog(res.data);
+                    break;
+                case 'redirect':
+                    location.href = res.data;
+                    break;
+            }
+        })
+        .error(function () {
+            Common.successAlert('网络错误，请稍后再试');
+        });
+        return false;
+    });
+
+    $('.widget-stat').on('click', function () {
+        switch ($(this).index()) {
+            case 0:
+                location.href = '__APP__/home/order/todayorder';
+                break;
+            case 1:
+                location.href = '__APP__/home/order/orderPlan';
+                break;
+            case 2:
+                location.href = '__APP__/home/favorite/index';
+                break;
+            case 3:
+                location.href = '__APP__/home/order/todayorder';
+                break;
+            case 4:
+                $('.nav-div').addClass('none');
+                $('.pw-div').removeClass('none');
+        }
+    });
+
+    $('.edit').on('click', function () {
+        $('.nav-div').addClass('none');
+        $('.pw-div').addClass('none');
+        var sex = '{$Think.session.sex}';
+        if (sex == '男') {
+            sex = 0;
+        } else {
+            sex = 1;
+        }
+        $('input[name=sex]').eq(sex).attr('checked', 'checked');
+        $('select[name=department]').val('{$Think.session.dep_id}');
+        $('.edit-div').removeClass('none');
+    });
+
+    $('#saveEdit').on('click', function () {
+        var data = {};
+        data.name = $('input[name=name]').val();
+        data.phone = $('input[name=phone]').val();
+        data.department = $('select[name=department]').val();
+        data.sex = $('input[name=sex]:checked').val();
+        data.email = $('input[name=email]').val();
+        if (data.name == '') {
+            Common.alertDialog('昵称不能为空');
+            return false;
+        }
+        if (data.email == '' && !(/^[a-z0-9]+([._\\-]*[a-z0-9])*@([a-z0-9]+[-a-z0-9]*[a-z0-9]+.){1,63}[a-z0-9]+$/.test(data.email))) {
+            Common.alertDialog('请输入正确的邮箱地址');
+            return false;
+        }
+        $.post('__APP__/home/user/updatePersonal', data, function(res) {
+            switch (res.status) {
+                case 'ok':
+                    Common.alertDialog('修改成功', function () {
+                        location.reload();
+                    });
+                    break;
+                case 'error':
+                    Common.alertDialog(res.data);
+                    break;
+                case 'redirect':
+                    location.href = res.data;
+                    break;
+            }
+        }, 'json')
+        .error(function () {
+            Common.alertDialog('网络错误，请稍后再试');
+            return false;
+        });
+        return false;
+    });
+
+    $('#savePw').on('click', function () {
+        var data = {};
+        data.oldPw = $('input[name=origin-pw]').val();
+        data.newPw = $('input[name=new-pw]').val();
+        data.confirm = $('input[name=confirm-pw]').val();
+
+        if (data.oldPw == '') {
+            Common.alertDialog('请输入原密码');
+            return false;
+        }
+
+        if (data.newPw == '') {
+            Common.alertDialog('请输入新密码');
+            return false;
+        }
+
+        if (data.confirm == '') {
+            Common.alertDialog('请输入确认密码');
+            return false;
+        }
+
+        if (data.newPw != data.confirm) {
+            Common.alertDialog('两次密码输入不一样，请重新输入');
+            return false;
+        }
+
+        $.post('__APP__/home/user/updatePw', data, function (res) {
+            switch (res.status) {
+                case 'ok':
+                    Common.alertDialog('修改密码成功', function () {
+                        location.reload();
+                    });
+                    break;
+                case 'error':
+                    Common.alertDialog(res.data);
+                    break;
+                case 'redirect':
+                    location.href = res.data;
+                    break;
+            }
+        }, 'json')
+        .error(function () {
+            Common.alertDialog('网络错误，请稍后再试');
+        });
+        return false;
+    });
+
+    $('.return').on('click', function () {
+        $('.pw-div').addClass('none');
+        $('.nav-div').removeClass('none');
+        $('.edit-div').addClass('none');
+    });
+
+
+
+
+});
+
+
+</script>

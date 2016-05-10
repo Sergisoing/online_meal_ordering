@@ -1,0 +1,229 @@
+<link rel="stylesheet" type="text/css" href="css/timepicker.css" />
+<script type="text/javascript" src="js/bootstrap-timepicker.js"></script>
+<style type="text/css">
+
+.smart-widget-body {
+    overflow: hidden;
+}
+
+</style>
+<ul class="breadcrumb">
+    <li><span class="primary-font"><i class="icon-home"></i></span><a href="index.html"></a>系统配置</li>
+    <li>系统配置</li>
+</ul>
+
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="smart-widget widget-dark-blue">
+            <div class="smart-widget-header">
+                修改管理员密码
+                <span class="smart-widget-option">
+                    <span class="refresh-icon-animated">
+                        <i class="fa fa-circle-o-notch fa-spin"></i>
+                    </span>
+                    <a href="#" class="widget-toggle-hidden-option">
+                        <i class="fa fa-cog"></i>
+                    </a>
+                    <a href="#" class="widget-collapse-option" data-toggle="collapse">
+                        <i class="fa fa-chevron-up"></i>
+                    </a>
+                    <a href="#" class="widget-refresh-option">
+                        <i class="fa fa-refresh"></i>
+                    </a>
+                    <a href="#" class="widget-remove-option">
+                        <i class="fa fa-times"></i>
+                    </a>
+                </span>
+            </div>
+            <div class="smart-widget-inner">
+                <div class="smart-widget-hidden-section">
+                    <ul class="widget-color-list clearfix">
+                        <li style="background-color:#20232b;" data-color="widget-dark"></li>
+                        <li style="background-color:#4c5f70;" data-color="widget-dark-blue"></li>
+                        <li style="background-color:#23b7e5;" data-color="widget-blue"></li>
+                        <li style="background-color:#2baab1;" data-color="widget-green"></li>
+                        <li style="background-color:#edbc6c;" data-color="widget-yellow"></li>
+                        <li style="background-color:#fbc852;" data-color="widget-orange"></li>
+                        <li style="background-color:#e36159;" data-color="widget-red"></li>
+                        <li style="background-color:#7266ba;" data-color="widget-purple"></li>
+                        <li style="background-color:#f5f5f5;" data-color="widget-light-grey"></li>
+                        <li style="background-color:#fff;" data-color="reset"></li>
+                    </ul>
+                </div>
+                <div class="smart-widget-body">
+                    <form class="form-horizontal" action="">
+
+                        <div class="form-group">
+                            <label class="control-label col-lg-3">原密码：</label>
+                            <div class="col-lg-6">
+                                <input type="password" name="old-pw" placeholder="请输入原密码" id="" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label col-lg-3">新密码：</label>
+                            <div class="col-lg-6">
+                                <input type="password" name="new-pw" placeholder="请输入新密码" id="" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label col-lg-3">确认密码：</label>
+                            <div class="col-lg-6">
+                                <input type="password" name="confirm-pw" placeholder="请再次输入新密码" id="" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12 text-right m-top-md">
+                            <button type="button" id="savePw" class="btn btn-info marginTB-xs"><i class="fa fa-save m-right-xs"></i>保存</button>
+                        </div>
+                    </form>
+                </div>
+            </div><!-- ./smart-widget-inner -->
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="smart-widget widget-dark-blue">
+            <div class="smart-widget-header">
+                订餐时间的设置
+                <span class="smart-widget-option">
+                    <span class="refresh-icon-animated">
+                        <i class="fa fa-circle-o-notch fa-spin"></i>
+                    </span>
+                    <a href="#" class="widget-toggle-hidden-option">
+                        <i class="fa fa-cog"></i>
+                    </a>
+                    <a href="#" class="widget-collapse-option" data-toggle="collapse">
+                        <i class="fa fa-chevron-up"></i>
+                    </a>
+                    <a href="#" class="widget-refresh-option">
+                        <i class="fa fa-refresh"></i>
+                    </a>
+                    <a href="#" class="widget-remove-option">
+                        <i class="fa fa-times"></i>
+                    </a>
+                </span>
+            </div>
+            <div class="smart-widget-inner">
+                <div class="smart-widget-hidden-section">
+                    <ul class="widget-color-list clearfix">
+                        <li style="background-color:#20232b;" data-color="widget-dark"></li>
+                        <li style="background-color:#4c5f70;" data-color="widget-dark-blue"></li>
+                        <li style="background-color:#23b7e5;" data-color="widget-blue"></li>
+                        <li style="background-color:#2baab1;" data-color="widget-green"></li>
+                        <li style="background-color:#edbc6c;" data-color="widget-yellow"></li>
+                        <li style="background-color:#fbc852;" data-color="widget-orange"></li>
+                        <li style="background-color:#e36159;" data-color="widget-red"></li>
+                        <li style="background-color:#7266ba;" data-color="widget-purple"></li>
+                        <li style="background-color:#f5f5f5;" data-color="widget-light-grey"></li>
+                        <li style="background-color:#fff;" data-color="reset"></li>
+                    </ul>
+                </div>
+                <div class="smart-widget-body">
+                    <form class="form-horizontal" action="">
+                        <div class="form-group">
+                            <label class="control-label col-lg-4">午餐订餐截止时间</label>
+                            <div class="col-lg-6">
+                                <div class="input-group bootstrap-timepicker">
+                                    <input type="text" value="{$noon}" name="noon" readonly class="form-control noon-deadline">
+                                    <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button"><i class="fa fa-clock-o"></i></button>
+                                    </span>
+                                </div>
+                            </div><!-- /.col -->
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-lg-4">晚餐订餐截止时间</label>
+                            <div class="col-lg-6">
+                                <div class="input-group bootstrap-timepicker">
+                                    <input type="text" readonly name="night" value='{$night}' class="form-control night-deadline">
+                                    <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button"><i class="fa fa-clock-o"></i></button>
+                                    </span>
+                                </div>
+                            </div><!-- /.col -->
+                        </div>
+                        <div class="col-lg-12 text-right m-top-md">
+                            <button type="button" id="saveTime" class="btn btn-info marginTB-xs"><i class="fa fa-save m-right-xs"></i>保存</button>
+                        </div>
+                    </form>
+                </div>
+            </div><!-- ./smart-widget-inner -->
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+
+$(function () {
+    $('.night-deadline').timepicker({
+        autoclose: true,
+        minuteStep: 1,
+        showSeconds: false,
+        showMeridian: false,
+        defaultTime: "{$night}"
+    });
+
+    $('.noon-deadline').timepicker({
+        autoclose: true,
+        minuteStep: 1,
+        showSeconds: false,
+        showMeridian: false,
+        defaultTime: "{$noon}"
+    });
+
+    $('#savePw').on('click', function () {
+        var args = {};
+        args.old = $('input[name=old-pw]').val();
+        args.new = $('input[name=new-pw]').val();
+        args.confirm = $('input[name=confirm-pw]').val();
+        if (args.old == '') {
+            Common.alertDialog('请输入原密码');
+            return false;
+        }
+        if (args.new == '') {
+            Common.alertDialog('请输入新密码');
+            return false;
+        }
+        if (args.confirm == '') {
+            Common.alertDialog('请再次输入新密码');
+            return false;
+        }
+        if (args.confirm != args.new) {
+            Common.alertDialog('两次输入密码不一致');
+            return false;
+        }
+        Common.buttonPost($(this), '__APP__/admin/config/updateAdminPw', args, function (res) {
+            if (res.status == 'ok') {
+                Common.alertDialog('修改成功', function () {
+                    location.reload();
+                });
+            } else {
+                Common.alertDialog(res.data);
+            }
+        });
+        return false;
+    });
+
+    $('#saveTime').on('click', function () {
+        var args = {};
+        args.noon = $('input[name=noon]').val();
+        args.night = $('input[name=night]').val();
+        Common.buttonPost($(this), '__APP__/admin/config/updateMealTime', args, function (res) {
+            if (res.status == 'ok') {
+                Common.alertDialog('修改成功', function () {
+                    location.reload();
+                });
+            } else {
+                Common.alertDialog(res.data);
+            }
+        });
+        return false;
+    });
+
+
+
+});
+</script>

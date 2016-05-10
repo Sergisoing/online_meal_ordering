@@ -1,1 +1,201 @@
-Home
+<style type="text/css">
+    .store-name {
+        font-size: 16px;
+        padding: 0px 20px 5px 10px;
+        font-weight: bolder;
+    }
+    .store-desc {
+        font-size: 12px;
+        padding: 0px 20px 5px 10px;
+    }
+    .store-score {
+        padding: 0px 10px 10px 10px;
+    }
+    .store-already {
+        padding: 0px 10px 10px 10px;
+        float: right;
+    }
+    .store:hover {
+        border: 1px solid #2baab1;
+        cursor: pointer;
+    }
+    #banner {
+        margin-top: 10px;
+    }
+    hr {
+        border-top: 2px solid #2baab1;
+    }
+    .kind-div {
+        border: 1px solid #eee;
+        overflow: hidden;
+        margin-bottom: 15px;
+    }
+    .dish-kind {
+        line-height: 36px;
+        text-align: center;
+    }
+    .dish-kind:hover {
+        background: #32c5cd;
+        color: white;
+        cursor: pointer;
+    }
+    .dish-kind-checked,.dish-sort-checked {
+        background: #32c5cd;
+        color: white;
+        text-align: center;
+    }
+    .sort-item {
+        border-right: 1px solid #eee;
+    }
+    .demo {
+        display: none;
+    }
+</style>
+
+<div class="section" id="banner">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="owl-carousel">
+                    <div class="item">
+                        <img src="../images/banner/banner1.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="../images/banner/banner2.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="../images/banner/banner3.jpg" alt="">
+                    </div>
+                </div>
+            </div><!-- ./col -->
+        </div><!-- ./row -->
+    </div><!-- ./container -->
+</div><!-- ./section -->
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="header-text m-bottom-md">
+                        <i class="fa fa-building-o"></i>&nbsp;&nbsp;店铺
+                    <span class="sub-header">
+                        store
+                    </span>
+                </h3>
+            </div>
+            <div class="col-md-12">
+                <div class="kind-div bg-white">
+                    <div class="col-md-1" style="margin: 10px 0px;"><h5 class="text-center" style="font-size: 16px;">分类</h5></div>
+                    <div class="col-md-10" style="margin: 10px 0px; border-left: 1px solid #eee;">
+                        <a class="shanglv col-md-2 dish-kind dish-kind-item dish-kind-checked" data-id="0">全部</a>
+                        <foreach name="kindList" item="v">
+                            <a class="shanglv col-md-2 dish-kind-item dish-kind" data-id="{$v.id}">{$v.name}</a>
+                        </foreach>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="kind-div bg-white">
+                    <a href="javascript:" class="col-md-1 dish-kind sort-item dish-sort-checked" data-sort="default">默认</a>
+                    <a href="" class="col-md-1 dish-kind sort-item" data-sort="new">最新添加</a>
+                    <a href="" class="col-md-1 dish-kind sort-item" data-sort="up">订餐量 <i class="fa fa-arrow-up fa-1x"></i></a>
+                    <a href="" class="col-md-1 dish-kind sort-item" data-sort="down">订餐量 <i class="fa fa-arrow-down fa-1x"></i></a>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 demo">
+                <div class="store pricing-widget clean-pricing bounceIn animation-element" >
+                    <div class="pricing-type text-center">
+                        <img src="../images/store/01.jpg" alt="">
+                    </div>
+                    <div class="store-name shenglv"></div>
+                    <p class="store-desc common-font"></p>
+                    <p class="common-font ">
+                        <span class="store-score"></span>
+                        <span class="store-already"></span>
+                    </p>
+                </div><!-- ./pricing-widget -->
+            </div><!-- .col -->
+
+            <div class="col-sm-12 text-center none" style="display: none;margin: 10px 0px;">暂时没有店铺信息</div>
+        </div><!-- ./row -->
+    </div><!-- ./container -->
+</div>
+
+
+<script type="text/javascript">
+
+$(function () {
+    $('body').on('click', '.store', function () {
+        location.href = '__APP__/home/dish/index/id/' + $(this).data('id');
+    });
+
+    var list = {
+        listData: null,
+        currentKind: '',
+        updateList: function () {
+            $('.new').remove();
+            if (!this.listData || this.listData.length == 0) {
+                $('.none').css('display','block');
+                return false;
+            }
+            $('.none').css('display','none');
+            for (var k in this.listData) {
+                var item = $('.demo').clone();
+                item.find('.store').data('id', this.listData[k].id);
+                item.find('img').attr('src', '../' + this.listData[k].picture);
+                item.find('.store-name').text(this.listData[k].name);
+                item.find('.store-desc').text(this.listData[k].desc);
+                item.find('.store-score').text((this.listData[k].score ? this.listData[k].score : '3.0') + '分');
+                item.find('.store-already').text('已订'+ (this.listData[k].mount ? this.listData[k].mount : '0') +'份');
+                item.insertBefore('.demo').removeClass('demo').addClass('new');
+            }
+
+        },
+        getStoreList: function () {
+            var data = {};
+            if (this.currentKind) {
+                data.kindId = this.currentKind;
+            }
+            if (this.sort != 'default') {
+                data.sort = this.sort;
+            }
+            $.post('__APP__/home/index/getStoreList', data, function (res) {
+                if (res.status == 'ok') {
+                    list.listData = res.data;
+                    list.updateList();
+                } else {
+                    list.getStoreList();
+                }
+            }, 'json');
+        },
+        bindEvent: function () {
+            $('.dish-kind-item').on('click', function () {
+                if ($(this).hasClass('dish-kind-checked')) {
+                    return false;
+                }
+                $('.dish-kind-checked').removeClass('dish-kind-checked');
+                $(this).addClass('dish-kind-checked');
+                list.currentKind = $(this).data('id');
+                list.getStoreList();
+                return false;
+            });
+
+            $('.sort-item').on('click', function () {
+                if ($(this).hasClass('dish-sort-checked')) {
+                    return false;
+                }
+                $('.dish-sort-checked').removeClass('dish-sort-checked');
+                $(this).addClass('dish-sort-checked');
+                list.sort = $(this).data('sort');
+                list.getStoreList();
+                return false;
+            });
+        },
+        init: function () {
+            this.bindEvent();
+            this.getStoreList();
+        }
+    };
+    list.init();
+});
+
+</script>

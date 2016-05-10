@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Simplify Admin</title>
+        <title>企业订餐系统管理后台</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
         <meta name="author" content="">
@@ -37,259 +37,37 @@
         <!-- Common -->
         <link href="css/self/common.css" rel="stylesheet">
 
+        <!-- Jquery -->
+        <script src="js/jquery-1.11.1.min.js"></script>
+
+        <!-- Bootstrap -->
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+
+        <!-- Slimscroll -->
+        <script src='js/jquery.slimscroll.min.js'></script>
+
+        <!-- Popup Overlay -->
+        <script src='js/jquery.popupoverlay.min.js'></script>
+
+        <!-- Modernizr -->
+        <script src='js/modernizr.min.js'></script>
+
+        <!-- Simplify -->
+        <script src="js/simplify/simplify.js"></script>
+        </body>
+
+        <!-- Common -->
+        <script src="js/self/common.js"></script>
+
     </head>
 
     <body class="overflow-hidden">
         <div class="wrapper preload">
-            <div class="sidebar-right">
-                <div class="sidebar-inner scrollable-sidebar">
-                    <div class="sidebar-header clearfix">
-                        <input class="form-control dark-input" placeholder="Search" type="text">
-                        <div class="btn-group pull-right">
-                            <a href="#" class="sidebar-setting" data-toggle="dropdown"><i class="fa fa-cog fa-lg"></i></a>
-                            <ul class="dropdown-menu pull-right flipInV">
-                                <li><a href="#"><i class="fa fa-circle text-danger"></i><span class="m-left-xs">Busy</span></a></li>
-                                <li><a href="#"><i class="fa fa-circle-o"></i><span class="m-left-xs">Turn Off Chat</span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="title-block">
-                        Group Chat
-                    </div>
-                    <div class="content-block">
-                        <ul class="sidebar-list">
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-circle-o text-success"></i><span class="m-left-xs">Close Friends</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-circle-o text-success"></i><span class="m-left-xs">Business</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="title-block">
-                        Favorites
-                    </div>
-                    <div class="content-block">
-                        <ul class="sidebar-list">
-                            <li>
-                                <a href="#" class="clearfix">
-                                    <img src="images/profile/profile2.jpg" class="img-circle" alt="user avatar">
-                                    <div class="chat-detail m-left-sm">
-                                        <div class="chat-name">
-                                            John Doe
-                                        </div>
-                                        <div class="chat-message">
-                                            Where are you?
-                                        </div>
-                                    </div>
-                                    <div class="chat-status">
-                                        <i class="fa fa-circle-o text-success"></i>
-                                    </div>
-                                    <div class="chat-alert">
-                                        <span class="badge badge-purple bounceIn animation-delay2">2</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="clearfix">
-                                    <img src="images/profile/profile3.jpg" class="img-circle" alt="user avatar">
-                                    <div class="chat-detail m-left-sm">
-                                        <div class="chat-name">
-                                            Jane Doe
-                                        </div>
-                                        <div class="chat-message">
-                                            Hello
-                                        </div>
-                                    </div>
-                                    <div class="chat-status">
-                                        <i class="fa fa-circle-o text-success"></i>
-                                    </div>
-                                    <div class="chat-alert">
-                                        <span class="badge badge-info bounceIn animation-delay2">1</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="clearfix">
-                                    <img src="images/profile/profile4.jpg" class="img-circle" alt="user avatar">
-                                    <div class="chat-detail m-left-sm">
-                                        <div class="chat-name">
-                                            John Doe
-                                        </div>
-                                        <div class="chat-message">
-                                            See you again next week.
-                                        </div>
-                                    </div>
-                                    <div class="chat-status">
-                                        <i class="fa fa-circle-o text-danger"></i>
-                                    </div>
-                                    <div class="chat-alert">
-                                        <i class="fa fa-check text-success"></i>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="clearfix">
-                                    <img src="images/profile/profile5.jpg" class="img-circle" alt="user avatar">
-                                    <div class="chat-detail m-left-sm">
-                                        <div class="chat-name">
-                                            John Doe
-                                        </div>
-                                        <div class="chat-message">
-                                            Hello, Are you there?
-                                        </div>
-                                    </div>
-                                    <div class="chat-status">
-                                        <i class="fa fa-circle-o text-danger"></i>
-                                    </div>
-                                    <div class="chat-alert">
-                                        <i class="fa fa-reply"></i>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="title-block">
-                        More friends
-                    </div>
-                    <div class="content-block">
-                        <ul class="sidebar-list">
-                            <li>
-                                <a href="#" class="clearfix">
-                                    <img src="images/profile/profile6.jpg" class="img-circle" alt="user avatar">
-                                    <div class="chat-detail m-left-sm">
-                                        <div class="chat-name">
-                                            John Doe
-                                        </div>
-                                        <div class="chat-message">
-                                            Where are you?
-                                        </div>
-                                    </div>
-                                    <div class="chat-status">
-                                        <i class="fa fa-circle-o text-success"></i>
-                                    </div>
-                                    <div class="chat-alert">
-                                        <span class="badge badge-success bounceIn animation-delay2">2</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="clearfix">
-                                    <img src="images/profile/profile7.jpg" class="img-circle" alt="user avatar">
-                                    <div class="chat-detail m-left-sm">
-                                        <div class="chat-name">
-                                            Jane Doe
-                                        </div>
-                                        <div class="chat-message">
-                                            Hello
-                                        </div>
-                                    </div>
-                                    <div class="chat-status">
-                                        <i class="fa fa-circle-o text-success"></i>
-                                    </div>
-                                    <div class="chat-alert">
-                                        <span class="badge badge-danger bounceIn animation-delay2">1</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="clearfix">
-                                    <img src="images/profile/profile8.jpg" class="img-circle" alt="user avatar">
-                                    <div class="chat-detail m-left-sm">
-                                        <div class="chat-name">
-                                            John Doe
-                                        </div>
-                                        <div class="chat-message">
-                                            See you again next week.
-                                        </div>
-                                    </div>
-                                    <div class="chat-status">
-                                        <i class="fa fa-circle-o text-danger"></i>
-                                    </div>
-                                    <div class="chat-alert">
-                                        <i class="fa fa-check text-success"></i>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="clearfix">
-                                    <img src="images/profile/profile9.jpg" class="img-circle" alt="user avatar">
-                                    <div class="chat-detail m-left-sm">
-                                        <div class="chat-name">
-                                            John Doe
-                                        </div>
-                                        <div class="chat-message">
-                                            Hello, Are you there?
-                                        </div>
-                                    </div>
-                                    <div class="chat-status">
-                                        <i class="fa fa-circle-o text-danger"></i>
-                                    </div>
-                                    <div class="chat-alert">
-                                        <i class="fa fa-reply"></i>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div><!-- sidebar-inner -->
-            </div><!-- sidebar-right -->
             <header class="top-nav">
                 <div class="top-nav-inner">
                     <div class="nav-header">
-                        <button type="button" class="navbar-toggle pull-left sidebar-toggle" id="sidebarToggleSM">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-
-                        <ul class="nav-notification pull-right">
-                            <li>
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-cog fa-lg"></i></a>
-                                <span class="badge badge-danger bounceIn">1</span>
-                                <ul class="dropdown-menu dropdown-sm pull-right user-dropdown">
-                                    <li class="user-avatar">
-                                        <img src="images/profile/profile1.jpg" alt="" class="img-circle">
-                                        <div class="user-content">
-                                            <h5 class="no-m-bottom">Jane Doe</h5>
-                                            <div class="m-top-xs">
-                                                <a href="profile.html" class="m-right-sm">Profile</a>
-                                                <a href="signin.html">Log out</a>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <a href="inbox.html">
-                                            Inbox
-                                            <span class="badge badge-danger bounceIn animation-delay2 pull-right">1</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            Notification
-                                            <span class="badge badge-purple bounceIn animation-delay3 pull-right">2</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="sidebarRight-toggle">
-                                            Message
-                                            <span class="badge badge-success bounceIn animation-delay4 pull-right">7</span>
-                                        </a>
-                                    </li>
-                                    <li class="divider"></li>
-                                    <li>
-                                        <a href="#">Setting</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-
-                        <a href="index.html" class="brand">
-                            <i class="fa fa-database"></i><span class="brand-name">SIMPLIFY ADMIN</span>
+                        <a href="__APP__/admin" class="brand">
+                            <i class="fa fa-database"></i><span class="brand-name">企业订餐系统管理后台</span>
                         </a>
                     </div>
                     <div class="nav-container">
@@ -311,9 +89,9 @@
                         <div class="pull-right m-right-sm">
                             <div class="user-block hidden-xs">
                                 <a href="#" id="userToggle" data-toggle="dropdown">
-                                    <img src="images/profile/profile1.jpg" alt="" class="img-circle inline-block user-profile-pic">
+                                    <img src="images/default_headimg.jpg" alt="" class="img-circle inline-block user-profile-pic">
                                     <div class="user-detail inline-block">
-                                        Jane Doe
+                                        管理员
                                         <i class="fa fa-angle-down"></i>
                                     </div>
                                 </a>
@@ -321,144 +99,14 @@
                                     <div class="panel-body paddingTB-sm">
                                         <ul>
                                             <li>
-                                                <a href="profile.html">
-                                                    <i class="fa fa-edit fa-lg"></i><span class="m-left-xs">My Profile</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="inbox.html">
-                                                    <i class="fa fa-inbox fa-lg"></i><span class="m-left-xs">Inboxes</span>
-                                                    <span class="badge badge-danger bounceIn animation-delay3">2</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="signin.html">
-                                                    <i class="fa fa-power-off fa-lg"></i><span class="m-left-xs">Sign out</span>
+                                                <a href="__APP__/admin/user/logout">
+                                                    <i class="fa fa-power-off fa-lg"></i><span class="m-left-xs">退出</span>
                                                 </a>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
-                            <ul class="nav-notification">
-                                <li>
-                                    <a href="#" data-toggle="dropdown"><i class="fa fa-envelope fa-lg"></i></a>
-                                    <span class="badge badge-purple bounceIn animation-delay5 active">2</span>
-                                    <ul class="dropdown-menu message pull-right">
-                                        <li><a>You have 4 new unread messages</a></li>
-                                        <li>
-                                            <a class="clearfix" href="#">
-                                                <img src="images/profile/profile2.jpg" alt="User Avatar">
-                                                <div class="detail">
-                                                    <strong>John Doe</strong>
-                                                    <p class="no-margin">
-                                                        Lorem ipsum dolor sit amet...
-                                                    </p>
-                                                    <small class="text-muted"><i class="fa fa-check text-success"></i> 27m ago</small>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="clearfix" href="#">
-                                                <img src="images/profile/profile3.jpg" alt="User Avatar">
-                                                <div class="detail">
-                                                    <strong>Jane Doe</strong>
-                                                    <p class="no-margin">
-                                                        Lorem ipsum dolor sit amet...
-                                                    </p>
-                                                    <small class="text-muted"><i class="fa fa-check text-success"></i> 5hr ago</small>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="clearfix" href="#">
-                                                <img src="images/profile/profile4.jpg" alt="User Avatar">
-                                                <div class="detail m-left-sm">
-                                                    <strong>Bill Doe</strong>
-                                                    <p class="no-margin">
-                                                        Lorem ipsum dolor sit amet...
-                                                    </p>
-                                                    <small class="text-muted"><i class="fa fa-reply"></i> Yesterday</small>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="clearfix" href="#">
-                                                <img src="images/profile/profile5.jpg" alt="User Avatar">
-                                                <div class="detail">
-                                                    <strong>Baby Doe</strong>
-                                                    <p class="no-margin">
-                                                        Lorem ipsum dolor sit amet...
-                                                    </p>
-                                                    <small class="text-muted"><i class="fa fa-reply"></i> 9 Feb 2013</small>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li><a href="#">View all messages</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#" data-toggle="dropdown"><i class="fa fa-bell fa-lg"></i></a>
-                                    <span class="badge badge-info bounceIn animation-delay6 active">4</span>
-                                    <ul class="dropdown-menu notification dropdown-3 pull-right">
-                                        <li><a href="#">You have 5 new notifications</a></li>
-                                        <li>
-                                            <a href="#">
-                                                <span class="notification-icon bg-warning">
-                                                    <i class="fa fa-warning"></i>
-                                                </span>
-                                                <span class="m-left-xs">Server #2 not responding.</span>
-                                                <span class="time text-muted">Just now</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <span class="notification-icon bg-success">
-                                                    <i class="fa fa-plus"></i>
-                                                </span>
-                                                <span class="m-left-xs">New user registration.</span>
-                                                <span class="time text-muted">2m ago</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <span class="notification-icon bg-danger">
-                                                    <i class="fa fa-bolt"></i>
-                                                </span>
-                                                <span class="m-left-xs">Application error.</span>
-                                                <span class="time text-muted">5m ago</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <span class="notification-icon bg-success">
-                                                    <i class="fa fa-usd"></i>
-                                                </span>
-                                                <span class="m-left-xs">2 items sold.</span>
-                                                <span class="time text-muted">1hr ago</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <span class="notification-icon bg-success">
-                                                    <i class="fa fa-plus"></i>
-                                                </span>
-                                                <span class="m-left-xs">New user registration.</span>
-                                                <span class="time text-muted">1hr ago</span>
-                                            </a>
-                                        </li>
-                                        <li><a href="#">View all notifications</a></li>
-                                    </ul>
-                                </li>
-                                <li class="chat-notification">
-                                    <a href="#" class="sidebarRight-toggle"><i class="fa fa-comments fa-lg"></i></a>
-                                    <span class="badge badge-danger bounceIn">1</span>
-
-                                    <div class="chat-alert">
-                                        Hello, Are you there?
-                                    </div>
-                                </li>
-                            </ul>
                         </div>
                     </div>
                 </div><!-- ./top-nav-inner -->
@@ -470,29 +118,94 @@
                             <li class="menu-header">
                                 Main Menu
                             </li>
-                            <li class="bg-palette1 active">
-                                <a href="index.html">
+                            <li class="bg-palette1 nav-i">
+                                <a href="__APP__/admin">
                                     <span class="menu-content block">
                                         <span class="menu-icon"><i class="block fa fa-home fa-lg"></i></span>
-                                        <span class="text m-left-sm">Dashboard</span>
+                                        <span class="text m-left-sm">后台主页</span>
                                     </span>
                                     <span class="menu-content-hover block">
-                                        Home
+                                        主页
                                     </span>
                                 </a>
                             </li>
-                            <li class="bg-palette2">
+                            <li class="openable bg-palette3 nav-i">
+                                <a href="#">
+                                    <span class="menu-content block">
+                                        <span class="menu-icon"><i class="block fa fa-users fa-lg"></i></span>
+                                        <span class="text m-left-sm">员工账户管理</span>
+                                        <span class="submenu-icon"></span>
+                                    </span>
+                                    <span class="menu-content-hover block">
+                                        账户
+                                    </span>
+                                </a>
+                                <ul class="submenu bg-palette4">
+                                    <li><a href="__APP__/admin/user/usermanage"><span class="submenu-label">账户管理</span></a></li>
+                                    <li><a href="__APP__/admin/user/depmanage"><span class="submenu-label">部门管理</span></a></li>
+                                </ul>
+                            </li>
+                            <li class="openable bg-palette4 nav-i">
+                                <a href="#">
+                                    <span class="menu-content block">
+                                        <span class="menu-icon"><i class="block fa fa-truck fa-lg"></i></span>
+                                        <span class="text m-left-sm">商家店铺管理</span>
+                                        <span class="submenu-icon"></span>
+                                    </span>
+                                    <span class="menu-content-hover block">
+                                        店铺
+                                    </span>
+                                </a>
+                                <ul class="submenu bg-palette4">
+                                    <li><a href="__APP__/admin/store/storemanage"><span class="submenu-label">店铺管理</span></a></li>
+                                    <li><a href="__APP__/admin/store/storedishmanage"><span class="submenu-label">店铺自定义菜系管理</span></a></li>
+                                </ul>
+                            </li>
+
+                            <li class="openable bg-palette2 nav-i">
+                                <a href="#">
+                                    <span class="menu-content block">
+                                        <span class="menu-icon"><i class="block fa fa-cutlery fa-lg"></i></span>
+                                        <span class="text m-left-sm">菜式管理</span>
+                                        <span class="submenu-icon"></span>
+                                    </span>
+                                    <span class="menu-content-hover block">
+                                        菜式
+                                    </span>
+                                </a>
+                                <ul class="submenu bg-palette4">
+                                    <li><a href="__APP__/admin/dish/index"><span class="submenu-label">菜式管理</span></a></li>
+                                </ul>
+                            </li>
+
+                            <li class="openable bg-palette3 nav-i">
+                                <a href="#">
+                                    <span class="menu-content block">
+                                        <span class="menu-icon"><i class="block fa fa-gear fa-lg"></i></span>
+                                        <span class="text m-left-sm">系统配置</span>
+                                        <span class="submenu-icon"></span>
+                                    </span>
+                                    <span class="menu-content-hover block">
+                                        配置
+                                    </span>
+                                </a>
+                                <ul class="submenu bg-palette3">
+                                    <li><a href="__APP__/admin/config/index"><span class="submenu-label">系统配置</span></a></li>
+                                </ul>
+                            </li>
+                            <!--
+                            <li class="bg-palette2 nav-i">
                                 <a href="landing/landing.html">
                                     <span class="menu-content block">
                                         <span class="menu-icon"><i class="block fa fa-desktop fa-lg"></i></span>
-                                        <span class="text m-left-sm">Landing</span>
+                                        <span class="text m-left-sm">landing</span>
                                     </span>
                                     <span class="menu-content-hover block">
                                         Landing
                                     </span>
                                 </a>
                             </li>
-                            <li class="openable bg-palette3">
+                            <li class="openable bg-palette3 nav-i">
                                 <a href="#">
                                     <span class="menu-content block">
                                         <span class="menu-icon"><i class="block fa fa-list fa-lg"></i></span>
@@ -510,7 +223,7 @@
                                     <li><a href="dropzone.html"><span class="submenu-label">Dropzone</span></a></li>
                                 </ul>
                             </li>
-                            <li class="openable bg-palette4">
+                            <li class="openable bg-palette4 nav-i">
                                 <a href="#">
                                     <span class="menu-content block">
                                         <span class="menu-icon"><i class="block fa fa-tags fa-lg"></i></span>
@@ -541,7 +254,7 @@
                                     <li><a href="nestable_list.html"><span class="submenu-label">Nestable Lists</span></a></li>
                                 </ul>
                             </li>
-                            <li class="bg-palette1">
+                            <li class="bg-palette1 nav-i">
                                 <a href="inbox.html">
                                     <span class="menu-content block">
                                         <span class="menu-icon"><i class="block fa fa-envelope fa-lg"></i></span>
@@ -553,7 +266,7 @@
                                     </span>
                                 </a>
                             </li>
-                            <li class="bg-palette2">
+                            <li class="bg-palette2 nav-i">
                                 <a href="timeline.html">
                                     <span class="menu-content block">
                                         <span class="menu-icon"><i class="block fa fa-clock-o fa-lg"></i></span>
@@ -565,10 +278,7 @@
                                     </span>
                                 </a>
                             </li>
-                            <li class="menu-header">
-                                Others
-                            </li>
-                            <li class="openable bg-palette3">
+                            <li class="openable bg-palette3 nav-i">
                                 <a href="#">
                                     <span class="menu-content block">
                                         <span class="menu-icon"><i class="block fa fa-gift fa-lg"></i></span>
@@ -593,7 +303,7 @@
                                     <li><a href="blank.html"><span class="submenu-label">Blank</span></a></li>
                                 </ul>
                             </li>
-                            <li class="openable bg-palette4">
+                            <li class="openable bg-palette4 nav-i">
                                 <a href="#">
                                     <span class="menu-content block">
                                         <span class="menu-icon"><i class="block fa fa-list fa-lg"></i></span>
@@ -628,6 +338,7 @@
                                     <li><a href="#"><span class="submenu-label">menu 2.2</span></a></li>
                                 </ul>
                             </li>
+                             -->
                         </ul>
                     </div>
                     <div class="sidebar-fix-bottom clearfix">
@@ -661,7 +372,7 @@
                         </div>
                         <a href="lockscreen.html" class="pull-right font-18"><i class="ion-log-out"></i></a>
                     </div>
-                </div><!-- sidebar-inner -->
+                </div>
             </aside>
             <div class="main-container">
                 <div class="padding-md">
@@ -676,33 +387,66 @@
             </div>
             <footer class="footer">
                 <span class="footer-brand">
-                    <strong class="text-danger">Simplify</strong> Admin
+                    <strong class="text-danger">企业</strong> 订餐
                 </span>
                 <p class="no-margin">
-                    &copy; 2014 <strong>Simplify Admin</strong>. ALL Rights Reserved.
+                    &copy; 2016 <strong>Yangqinchuan</strong>. ALL Rights Reserved.
                 </p>
             </footer>
         </div>
-        <!-- Jquery -->
-        <script src="js/jquery-1.11.1.min.js"></script>
 
-        <!-- Bootstrap -->
-        <script src="bootstrap/js/bootstrap.min.js"></script>
 
-        <!-- Slimscroll -->
-        <script src='js/jquery.slimscroll.min.js'></script>
+        <a href="#" class="scroll-to-top hidden-print active"><i class="fa fa-chevron-up fa-lg"></i></a>
 
-        <!-- Popup Overlay -->
-        <script src='js/jquery.popupoverlay.min.js'></script>
+        <!-- Modal -->
+        <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="confirmDialog" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button aria-hidden="true" data-dismiss="modal" class="_close close" type="button">×</button>
+                        <h4 class="modal-title">提示信息</h4>
+                    </div>
+                    <div class="modal-body">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="_close btn btn-default" data-dismiss="modal">关闭</button>
+                        <button type="button"  data-dismiss="modal" class="_confirm btn btn-warning">确认</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal -->
+        <!-- Modal -->
+        <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="alertDialog" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button aria-hidden="true" data-dismiss="modal" class="_close close" type="button">×</button>
+                        <h4 class="modal-title">提示信息</h4>
+                    </div>
+                    <div class="modal-body">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="_close btn btn-danger" data-dismiss="modal">确认</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal -->
 
-        <!-- Modernizr -->
-        <script src='js/modernizr.min.js'></script>
+        <!-- Footer -->
+        <script type="text/javascript">
+            $(function () {
+                var nav = '{$nav}';
+                var subNav = '{$subNav}';
+                if (subNav) {
+                    $('.nav-i').eq(nav - 1).addClass('open');
+                    $('.nav-i').eq(nav - 1).find('ul.submenu').css('display', 'block').find('li').eq(subNav - 1).addClass('active');
+                } else {
+                    $('.nav-i').eq(nav - 1).addClass('active');
+                }
+            });
 
-        <!-- Simplify -->
-        <script src="js/simplify/simplify.js"></script>
-        </body>
-
-        <!-- Common -->
-        <script src="js/self/common.js"></script>
+        </script>
     </body>
 </html>

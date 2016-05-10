@@ -1,0 +1,202 @@
+<style type="text/css">
+    .dish-name {
+        font-size: 16px;
+        padding: 0px 20px 5px 10px;
+        font-weight: bolder;
+    }
+    .dish-desc {
+        font-size: 12px;
+        padding: 0px 20px 5px 10px;
+    }
+    .dish-score {
+        padding: 0px 10px 10px 10px;
+    }
+    .dish-already {
+        padding: 0px 10px 10px 10px;
+        float: right;
+    }
+    .dish:hover {
+        border: 1px solid #2baab1;
+        cursor: pointer;
+    }
+    #banner {
+        margin-top: 10px;
+    }
+    hr {
+        border-top: 2px solid #2baab1;
+    }
+    .kind-div {
+        border: 1px solid #eee;
+        overflow: hidden;
+        margin-bottom: 15px;
+    }
+    .dish-kind {
+        line-height: 36px;
+        text-align: center;
+    }
+    .dish-kind:hover {
+        background: #32c5cd;
+        color: white;
+        cursor: pointer;
+    }
+    .dish-kind-checked,.dish-sort-checked {
+        background: #32c5cd;
+        color: white !important;
+        text-align: center;
+    }
+    .dish-kind:active {
+        color: white;
+    }
+    .sort-item {
+        border-right: 1px solid #eee;
+    }
+    .demo-dish {
+        display: none;
+    }
+    .none {
+        display: none;
+    }
+</style>
+
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h4><i class="fa fa-edit fa-1x"></i>&nbsp;&nbsp;&nbsp;店铺</h4>
+            </div>
+            <div class="col-md-12">
+                <div class="kind-div bg-white">
+                    <div class="col-md-1" style="margin: 10px 0px;"><h5 class="text-center" style="font-size: 16px;">店铺分类</h5></div>
+                    <div class="col-md-10" style="margin: 10px 0px; border-left: 1px solid #eee;">
+                        <a class="shanglv col-md-2 dish-kind all-kind">全部分类</a>
+                        <foreach name="storeTypeList" item="v">
+                            <a data-id="{$v['id']}" href="javascript: void(0);" class="store-type shanglv col-md-2 dish-kind kind-item">{$v['name']}</a>
+                        </foreach>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="kind-div bg-white">
+                    <a href="javascript: void(0)" class="dish-sort-checked col-md-1 dish-kind sort-item sort-defalut">默认</a>
+                    <a href="javascript: void(0)" class="col-md-1 dish-kind sort-item new-add">最新添加</a>
+                    <a href="javascript: void(0)" class="col-md-1 dish-kind sort-item count-up">订餐量 <i class="fa fa-arrow-up fa-1x"></i></a>
+                    <a href="javascript: void(0)" class="col-md-1 dish-kind sort-item count-down">订餐量 <i class="fa fa-arrow-down fa-1x"></i></a>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 demo-dish">
+                <div class="dish pricing-widget clean-pricing bounceIn animation-element" data-id="">
+                    <div class="pricing-type text-center">
+                        <img class="dish-pic" src="" alt="">
+                    </div>
+                    <div class="dish-name shenglv"></div>
+                    <p class="dish-desc common-font"></p>
+                    <p class="common-font ">
+                        <span class="dish-score"></span>
+                        <span class="dish-already"></span>
+                    </p>
+                </div><!-- ./pricing-widget -->
+            </div><!-- .col -->
+            <div class="col-md-12 none text-center" style="margin: 20px 0px;">
+                暂时没有菜式信息
+            </div>
+        </div><!-- ./row -->
+    </div><!-- ./container -->
+</div>
+
+
+<script type="text/javascript">
+
+$(function () {
+    var page = {
+        get storeId() {
+            return Common.get('__APP__/home/dish/index/', 'id');
+        },
+        get typeId() {
+            return Common.get('__APP__/home/dish/index/', 'type_id');
+        },
+        orderType: null,
+        bindEvent: function () {
+            $('.store-type').on('click',  function () {
+                if ($(this).hasClass('dish-kind-checked')) {
+                    return false;
+                }
+                $('.dish-kind-checked').removeClass('dish-kind-checked');
+                $(this).addClass('dish-kind-checked');
+                page.getAllDish();
+            });
+            $('.all-kind').on('click', function () {
+                if ($(this).hasClass('dish-kind-checked')) {
+                    return false;
+                }
+                $('.dish-kind-checked').removeClass('dish-kind-checked');
+                $(this).addClass('dish-kind-checked');
+                page.getAllDish();
+            });
+            $('body').on('click', '.real-dish', function  () {
+                location.href = '__APP__/home/dish/detail/id/' + $(this).data('id');
+            });
+            $('.new-add,.count-down,.count-up,.sort-defalut').on('click', function () {
+                if ($(this).hasClass('dish-sort-checked')) {
+                    return false;
+                }
+                $('.dish-sort-checked').removeClass('dish-sort-checked');
+                $(this).addClass('dish-sort-checked');
+                if ($(this).hasClass('new-add')) {
+                    page.orderType = 'new';
+                } else if ($(this).hasClass('count-down')) {
+                    page.orderType = 'down';
+                } else if ($(this).hasClass('count-up')) {
+                    page.orderType = 'up';
+                } else {
+                    page.orderType = null;
+                }
+                page.getAllDish();
+            });
+        },
+        getAllDish: function () {
+            var typeId = $('.dish-kind-checked').data('id');
+            if (typeId) {
+                var url = '__APP__/home/dish/getDishList/id/' + page.storeId + '/type_id/' + typeId;
+            } else {
+                var url = '__APP__/home/dish/getDishList/id/' + page.storeId;
+            }
+            if (page.orderType) {
+                url += '/order/' + page.orderType;
+            }
+            $.get(url, function(data) {
+                $('.real-dish').remove();
+
+                if (!data || data.length == 0) {
+                    $('.none').css('display', 'block');
+                } else {
+                    $('.none').css('display', 'none');
+                }
+
+                var demo = $('.demo-dish');
+                for (var key in data) {
+                    var newItem = demo.clone();
+                    newItem.find('.dish').attr('data-id', data[key].id).find('.dish-name').text(data[key].name);
+                    newItem.find('.dish-score').text('￥' + data[key].price);
+                    newItem.find('.dish-pic').attr('src', '../images/' + data[key].picture);
+                    newItem.find('.dish-desc').text(data[key].desc);
+                    newItem.find('.dish-already').text('已订' + data[key].count + '份');
+                    newItem.insertBefore(demo).removeClass('demo-dish').addClass('real-dish').data('id', data[key].id);
+                }
+            });
+        },
+        init: function () {
+            this.bindEvent();
+            if (this.typeId) {
+                $('.kind-item[data-id='+ this.typeId +']').addClass('dish-kind-checked');
+            } else {
+                $('.all-kind').addClass('dish-kind-checked');
+            }
+            page.getAllDish();
+        }
+    };
+
+    page.init();
+    window.p = page;
+});
+
+</script>

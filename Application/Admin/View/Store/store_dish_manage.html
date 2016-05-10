@@ -1,0 +1,216 @@
+
+<style type="text/css">
+
+    .list-group-item{
+        line-height: 30px;
+        overflow: hidden;
+    }
+    .demo {
+        display: none;
+    }
+</style>
+
+<ul class="breadcrumb">
+    <li><span class="primary-font"><i class="icon-home"></i></span><a href="index.html"></a>商家店铺管理</li>
+    <li>店铺自定义菜系管理</li>
+</ul>
+<div class="smart-widget widget-dark-blue">
+    <div class="smart-widget-header">
+        店铺自定义分类
+        <span class="smart-widget-option">
+            <span class="refresh-icon-animated">
+                <i class="fa fa-circle-o-notch fa-spin"></i>
+            </span>
+            <a href="#" class="widget-toggle-hidden-option">
+                <i class="fa fa-cog"></i>
+            </a>
+            <a href="#" class="widget-collapse-option" data-toggle="collapse">
+                <i class="fa fa-chevron-up"></i>
+            </a>
+            <a href="#" class="widget-refresh-option">
+                <i class="fa fa-refresh"></i>
+            </a>
+            <a href="#" class="widget-remove-option">
+                <i class="fa fa-times"></i>
+            </a>
+        </span>
+    </div>
+    <div class="smart-widget-inner">
+        <div class="smart-widget-hidden-section">
+            <ul class="widget-color-list clearfix">
+                <li style="background-color:#20232b;" data-color="widget-dark"></li>
+                <li style="background-color:#4c5f70;" data-color="widget-dark-blue"></li>
+                <li style="background-color:#23b7e5;" data-color="widget-blue"></li>
+                <li style="background-color:#2baab1;" data-color="widget-green"></li>
+                <li style="background-color:#edbc6c;" data-color="widget-yellow"></li>
+                <li style="background-color:#fbc852;" data-color="widget-orange"></li>
+                <li style="background-color:#e36159;" data-color="widget-red"></li>
+                <li style="background-color:#7266ba;" data-color="widget-purple"></li>
+                <li style="background-color:#f5f5f5;" data-color="widget-light-grey"></li>
+                <li style="background-color:#fff;" data-color="reset"></li>
+            </ul>
+        </div>
+        <div class="smart-widget-body clearfix">
+            <div class="col-md-3">
+                <select class="form-control" id="store-list">
+                    <option value="0">选择店铺</option>
+                    <foreach name="storeList" item="v">
+                    <option value="{$v.id}">{$v.name}</option>
+                    </foreach>
+                </select>
+            </div>
+            <a href="#addModel" id="add" data-toggle="modal" class="btn btn-success btn-sm pull-right"><i class="fa fa-plus"></i>添加分类</a>
+        </div>
+        <ul class="list-group to-do-list sortable-list no-border">
+            <li class="list-group-item demo" draggable="true">
+                <span></span>
+                <a href="#updateModel" data-toggle="modal" class="btn btn-success btn-sm pull-right edit"><i class="fa fa-pencil-square-o"></i>修改分类</a>
+            </li>
+        </ul>
+    </div><!-- ./smart-widget-inner -->
+</div>
+
+
+<div class="modal fade" id="addModel">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">新增店铺分类</h4>
+            </div>
+            <div class="modal-body">
+                <form role="form">
+                    <div class="input-group form-group">
+                        <input type="text" name="kind-name" class="form-control" id="inputEmailModal" placeholder="请输入店铺分类名称">
+                        <div class="input-group-btn">
+                            <button type="button" class="btn btn-success no-shadow" tabindex="-1" id="addSave"><i class="fa fa-save m-right-xs"></i>保存</button>
+                        </div>
+                    </div>
+                </form>
+                <p class="text-danger err-msg"></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="updateModel">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">更改店铺分类</h4>
+            </div>
+            <div class="modal-body">
+                <form role="form">
+                    <div class="input-group form-group">
+                        <input type="text" name="update-name" class="form-control" id="inputEmailModal" placeholder="请输入店铺分类名称">
+                        <div class="input-group-btn">
+                            <button type="button" class="btn btn-success no-shadow" tabindex="-1" id="updateSave"><i class="fa fa-save m-right-xs"></i>保存</button>
+                        </div>
+                    </div>
+                </form>
+                <p class="text-danger err-msg"></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+
+$(function () {
+    var kindList = {
+        styleList: null,
+        updateId: 0,
+        get storeId() {
+            return  $('#store-list').val();
+        },
+        updateStyleList() {
+            $('.new').remove();
+            if (!this.styleList) {
+                var item = $('.demo.list-group-item').clone();
+                item.children('span').text('当前店铺暂时没有分类');
+                item.children('a').remove();
+                item.insertBefore('.demo').removeClass('demo').addClass('new text-center');
+                return false;
+            }
+
+            for (var key in this.styleList) {
+                var item = $('.demo.list-group-item').clone();
+                item.children('span').text(this.styleList[key]);
+                item.find('a').data('id', key);
+                item.insertBefore('.demo').removeClass('demo').addClass('new');
+            }
+        },
+        bindEvent: function () {
+            $('#store-list').on('change', function () {
+                if (kindList.storeId != '0') {
+                    $.post('__APP__/admin/store/getKindByStore', {'storeId' : kindList.storeId} ,function (res) {
+                        if (res.status == 'ok') {
+                            kindList.styleList = res.data;
+                            kindList.updateStyleList();
+                        } else {
+                            Common.dangerAlert('网络错误，请稍后再试！');
+                        }
+                    }, 'json')
+                    .error(function () {
+                        Common.dangerAlert('网络错误，请稍后再试！');
+                    });
+                }
+            });
+            $('.sortable-list').on('click','.edit' ,function () {
+                kindList.updateId = $(this).data('id');
+                $('input[name=update-name]').val($(this).siblings('span').text());
+            });
+
+            $('#updateSave').on('click', function () {
+                var name = $('input[name=update-name]').val();
+                if (!name) {
+                    $('.err-msg').text('分类名称不能为空');
+                    return false;
+                }
+                Common.buttonPost($(this), '__APP__/admin/store/storeKindUpdate', {'storeId': kindList.storeId, 'id': kindList.updateId, name: name}, function(res) {
+                    if (res.status == 'ok') {
+                        alert('更新成功');
+                        location.reload();
+                    } else {
+                        alert('更新失败');
+                    }
+                });
+            });
+
+            $('#add').on('click', function () {
+                if (kindList.storeId == '0') {
+                    Common.warningAlert('请先选择新增分类的店铺');
+                    return false;
+                }
+                $('input[name=kind-name]').val('');
+                return true;
+            });
+
+            $('#addSave').on('click', function () {
+                var name = $('input[name=kind-name]').val();
+                if (!name) {
+                    $('.err-msg').text('分类名称不能为空');
+                    return false;
+                }
+
+                Common.buttonPost($(this), '__APP__/admin/store/storeKindAdd', {'storeId': kindList.storeId, "name": name}, function (res) {
+                    if (res.status == 'ok') {
+                        alert('添加成功');
+                        location.reload();
+                    } else {
+                        alert('网路错误，请稍后再试');
+                    }
+                });
+
+            });
+        },
+        init: function () {
+            this.bindEvent();
+        }
+    };
+
+    kindList.init();
+});
+</script>

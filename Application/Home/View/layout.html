@@ -7,7 +7,7 @@
     -->
     <head>
         <meta charset="utf-8">
-        <title>Simplify Admin</title>
+        <title>员工订餐系统</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
         <meta name="author" content="">
@@ -33,9 +33,57 @@
 
         <!-- Simplify -->
         <link href="../css/simplify.css" rel="stylesheet">
+        <!-- Common -->
+        <link href="../css/self/common.css" rel="stylesheet">
+
+
+        <!-- Jquery -->
+        <script src="../js/jquery-1.11.1.min.js"></script>
+
+        <!-- Bootstrap -->
+        <script src="../bootstrap/js/bootstrap.min.js"></script>
+
+        <!-- Modernizr -->
+        <script src='../js/modernizr.min.js'></script>
+
+        <!-- Owl -->
+        <script src='../js/owl.carousel.min.js'></script>
+
+        <!-- Waypoint -->
+        <script src='../js/waypoints.min.js'></script>
+
+        <!-- ScrollTo -->
+        <script src="../js/jquery.scrollTo.min.js"></script>
+
+        <!-- Local Scroll -->
+        <script src="../js/jquery.localScroll.min.js"></script>
+
+        <!-- Local Scroll -->
+        <script src="../js/self/common.js"></script>
+
+        <!-- Revolution Slider -->
+        <script src="rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+        <script src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
 
     </head>
 
+    <style type="text/css">
+        ._headimg {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        ._personal_center {
+
+        }
+        ._none {
+            display: none;
+        }
+        ._nav >li.active>a {
+            color: #2baab1;
+        }
+    </style>
 <!--
 #######################################
     - THE BODY PART -
@@ -52,28 +100,35 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                   </button>
-                  <a href="../index.html" class="navbar-brand"><strong><span class="text-success">员工</span>订餐系统</strong></a>
+                  <a href="__APP__/home/" class="navbar-brand"><strong><span class="text-success">员工</span>订餐系统</strong></a>
                 </div>
                 <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-                  <ul class="nav navbar-nav">
+                  <ul class="nav _nav navbar-nav">
                     <li>
-                      <a href="#howItWorkSection">个人中心</a>
+                      <a href="__APP__/home/user/index">个人中心</a>
                     </li>
                     <li>
-                      <a href="#featureSection">我的订单</a>
-                    </li>
-                    <li class="active">
-                      <a href="#pricingSection">今日订餐</a>
+                      <a href="__APP__/home/order/myOrder">我的订单</a>
                     </li>
                     <li>
-                      <a href="#blogSection">订餐计划</a>
+                      <a href="__APP__/home/order/todayorder">今日订餐</a>
                     </li>
                     <li>
-                      <a href="#subscribeSection">收藏夹</a>
+                      <a href="__APP__/home/order/orderplan">订餐计划</a>
+                    </li>
+                    <li>
+                      <a href="__APP__/home/favorite/index">收藏夹</a>
                     </li>
                   </ul>
                   <ul class="nav navbar-nav navbar-right">
+                    <present name="Think.session.name">
+                    <li class="btn-link _personal_center">
+                        <img src="../{$Think.session.headimg}" alt="" class="inline-block _headimg">
+                        <div class="inline-block"><a href="__APP__/home/user/index">{$Think.session.name}</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="__APP__/admin/user/logout">退出</a></div>
+                    </li>
+                    <else />
                     <li class="btn-link"><a href="__APP__/admin/user/index" class="btn btn-sm btn-success">登录</a></li>
+                    </present>
                   </ul>
                 </nav>
               </div>
@@ -85,33 +140,24 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-3">
-                            <h4>Contact Us</h4>
+                            <h4>联系我们</h4>
                             <address class="m-top-md">
-                              <strong>Twitter, Inc.</strong><br>
-                                795 Folsom Ave, Suite 600<br>
-                                San Francisco, CA 94107<br>
                                 <div class="seperator"></div>
-                                <strong>Phone : <span class="theme-font">(123) 456-7890</span></strong><br>
-                                <strong>Email : <span class="theme-font">endless.themes@gmail.com</span></strong><br>
-                                <strong>Website : <span class="theme-font">Your website</span></strong>
+                                <strong>Phone : <span class="theme-font">15801094323</span></strong><br>
+                                <strong>Email : <span class="theme-font">yangqinchuan_kis@163.com</span></strong><br>
+                                <strong>Website : <span class="theme-font">kisme.xicp.cn</span></strong>
                             </address>
                         </div><!-- ./col -->
                         <div class="col-md-3">
-                            <h4>Quick Link</h4>
+                            <h4>个人订餐链接</h4>
                             <ul class="list-unstyled m-top-md">
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">Term & Conditions</a></li>
-                                <li><a href="#">FAQS</a></li>
+                                <li><a href="http://www.nuomi.com/" target="_blank">百度糯米</a></li>
+                                <li><a href="http://waimai.baidu.com/" target="_blank">百度外卖</a></li>
+                                <li><a href="http://waimai.meituan.com/" target="_blank">美团外卖</a></li>
+                                <li><a href="https://www.ele.me" target="_blank">饿了么</a></li>
                             </ul>
                         </div><!-- ./col -->
                         <div class="col-md-3">
-                            <h4>Quick Link</h4>
-                            <ul class="list-unstyled m-top-md">
-                                <li><a href="#">How it work</a></li>
-                                <li><a href="#">Find Work</a></li>
-                                <li><a href="#">Join Us</a></li>
-                            </ul>
                         </div><!-- ./col -->
                         <div class="col-md-3">
                             <h4>Flikr Photo</h4>
@@ -150,30 +196,41 @@
             <a href="#" class="scroll-to-top hidden-print"><i class="fa fa-chevron-up fa-lg"></i></a>
         </div><!-- /wrapper -->
 
-        <!-- Jquery -->
-        <script src="../js/jquery-1.11.1.min.js"></script>
-
-        <!-- Bootstrap -->
-        <script src="../bootstrap/js/bootstrap.min.js"></script>
-
-        <!-- Modernizr -->
-        <script src='../js/modernizr.min.js'></script>
-
-        <!-- Owl -->
-        <script src='../js/owl.carousel.min.js'></script>
-
-        <!-- Waypoint -->
-        <script src='../js/waypoints.min.js'></script>
-
-        <!-- ScrollTo -->
-        <script src="../js/jquery.scrollTo.min.js"></script>
-
-        <!-- Local Scroll -->
-        <script src="../js/jquery.localScroll.min.js"></script>
-
-        <!-- Revolution Slider -->
-        <script src="rs-plugin/js/jquery.themepunch.tools.min.js"></script>
-        <script src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+        <!-- Modal -->
+        <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="confirmDialog" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button aria-hidden="true" data-dismiss="modal" class="_close close" type="button">×</button>
+                        <h4 class="modal-title">提示信息</h4>
+                    </div>
+                    <div class="modal-body">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="_close btn btn-default" data-dismiss="modal">关闭</button>
+                        <button type="button"  data-dismiss="modal" class="_confirm btn btn-warning">确认</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal -->
+        <!-- Modal -->
+        <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="alertDialog" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button aria-hidden="true" data-dismiss="modal" class="_close close" type="button">×</button>
+                        <h4 class="modal-title">提示信息</h4>
+                    </div>
+                    <div class="modal-body">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="_close btn btn-danger" data-dismiss="modal">确认</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal -->
 
         <script type="text/javascript">
 
@@ -286,6 +343,13 @@
               duration:800,
               offset: -100
             });
+
+
+            var nav = '{$nav}';
+            if (nav) {
+                $('._nav>li').eq(nav-1).addClass('active');
+            }
+
         });
 
     </script>

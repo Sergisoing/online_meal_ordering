@@ -1,11 +1,58 @@
 <?php
 namespace Home\Controller;
 use Think\Controller;
-class IndexController extends Controller {
-    public function index($id = 1){
-        // $this->show('<style type="text/css">*{ padding: 0; margin: 0; } div{ padding: 4px 48px;} body{ background: #fff; font-family: "微软雅黑"; color: #333;font-size:24px} h1{ font-size: 100px; font-weight: normal; margin-bottom: 12px; } p{ line-height: 1.8em; font-size: 36px } a,a:hover{color:blue;}</style><div style="padding: 24px 48px;"> <h1>:)</h1><p>欢迎使用 <b>ThinkPHP</b>！</p><br/>版本 V{$Think.version}</div><script type="text/javascript" src="http://ad.topthink.com/Public/static/client.js"></script><thinkad id="ad_55e75dfae343f5a1"></thinkad><script type="text/javascript" src="http://tajs.qq.com/stats?sId=9347272" charset="UTF-8"></script>','utf-8');
-        // echo $_GET['id'];
-        $this->display();
+use Home\Model;
 
+class IndexController extends Controller {
+    public function index(){
+        $store = D('store');
+        $kind = D('dish_kind');
+        $data = $kind->select();
+        $this->assign('kindList', $data);
+        $this->display();
+    }
+
+    public function test() {
+        $store = D('store');
+        dump($store->getStoreScore());
+    }
+
+    public function getStoreList() {
+        $kindId = I('post.kindId');
+        $sort   = I('post.sort');
+        $conditions = array();
+        $where = 'where store.is_delete = 0';
+        if ($kindId) {
+            $where .= ' && kind_id = ' . $kindId;
+        }
+        $order = '';
+        if ($sort) {
+            switch ($sort) {
+                case 'up':
+                    $order = 'order by mount asc';
+                    break;
+                case 'down':
+                    $order = 'order by mount desc';
+                    break;
+                case 'new':
+                    $order = 'order by store.create_time desc';
+                    break;
+            }
+        }
+        $store = D('store');
+
+
+        $data = $store->query('select store.id, store.name,store.phone,store.desc,adress,store.picture,sum(count) as mount from store left join dish on store.id = dish.store_id '. $where .' group by store.id ' . $order);
+
+        $scores = $store->getStoreScore();
+        foreach ($data as &$value) {
+            foreach ($scores as $v) {
+                if ($v['store_id'] == $value['id']) {
+                    $value['score'] = number_format($v['avg'], 1);
+                }
+            }
+        }
+
+        $this->ajaxReturn(array('status' => 'ok', 'data' => $data));
     }
 }

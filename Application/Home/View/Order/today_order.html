@@ -1,0 +1,234 @@
+
+<style type="text/css">
+.h-80 {
+    height: 80px;
+}
+.l-80 {
+    line-height: 80px;
+}
+.table-cell {
+    display: table-cell;
+}
+.display-table {
+    display: table;
+}
+.width-col-5 {
+    width:41.66666667%;
+}
+.width-col-3 {
+    width:25%;
+}
+.width-col-2 {
+    width: 16.66666667%;
+}
+.width-col-1 {
+    width: 8.33333333%;
+}
+.table-fixed {
+    table-layout: fixed;
+}
+.order-table {
+    border-top: 1px solid #ddd !important;
+}
+.w-150 {
+    width: 150px;
+}
+.no-l-padding {
+    padding-left: 0px !important;
+}
+.img-wrap {
+    float: left;
+}
+.title-wrap {
+    margin-left: 150px;
+}
+.ve-middle {
+    vertical-align: middle!important;
+}
+.order-table td{
+    overflow: hidden;
+}
+.kind-div {
+    border: 1px solid #eee;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.kind-item {
+    line-height: 36px;
+    text-align: center;
+    border-right: 1px solid #eee;
+}
+.kind-item:hover {
+    background: #32c5cd;
+    color: white;
+    cursor: pointer;
+}
+.kind-item-checked {
+    background: #32c5cd;
+    color: white;
+    text-align: center;
+}
+.demo,.none-data {
+    display: none;
+}
+</style>
+
+<div class="section m-bottom-lg" id="featureSection">
+    <div class="container">
+        <h3 class="header-text m-bottom-md">
+                <i class="fa fa-file-text-o"></i>&nbsp;&nbsp;今日订餐
+            <span class="sub-header">
+                Today Orders
+            </span>
+        </h3>
+        <div class="col-sm-12 no-padding">
+            <div class="kind-div bg-white">
+                <a href="javascript: void(0)" class="col-md-1 kind-item" data-sort="noon">中餐</a>
+                <a href="javascript: void(0)" class="col-md-1 kind-item" data-sort="night">晚餐</a>
+            </div>
+        </div>
+        <table class="table order-table table-hover">
+            <thead class="bg-white">
+                <tr>
+                    <th class="text-center width-col-2 no-padding border-left border-right"><h5>图片</h5></th>
+                    <th class="text-center width-col-2 no-padding border-left border-right"><h5>商品</h5></th>
+                    <th class="text-center width-col-3 no-padding border-left border-right"><h5>店铺</h5></th>
+                    <th class="text-center width-col-1 no-padding border-left border-right"><h5>价格</h5></th>
+                    <th class="text-center width-col-1 no-padding border-left border-right"><h5>数量</h5></th>
+                    <th class="text-center width-col-2 no-padding border-left border-right"><h5>描述</h5></th>
+                    <th class="text-center width-col-1 no-padding border-left border-right"><h5>操作</h5></th>
+                </tr>
+            </thead>
+                <tr class="border-bottom demo">
+                    <td class="h-80 text-center">
+                        <img src="../images/dish/2016-04-27/5720a57cafe43.jpg" alt="" class="h-80">
+                    </td>
+                    <td class="font-14 h-80 text-center ve-middle">
+                        <a href="" class="font-14">柴味鱼</a>
+                    </td>
+                    <td class="font-14 h-80 text-center ve-middle">
+                        <a href="" class="font-14">重庆美食坊2-炒菜-湘菜</a>
+                    </td>
+                    <td class="font-14 h-80 text-center ve-middle">
+                        ￥78.00
+                    </td>
+                    <td class="font-14 h-80 text-center ve-middle">
+                        1
+                    </td>
+                    <td class="font-14 h-80 text-center ve-middle">
+                        不要太辣啦
+                    </td>
+                    <td class="h-80 text-center ve-middle">
+                        <a href="javascript: void(0)" class="delete font-18 text-danger"><i class="fa fa-times"></i></a>
+                    </td>
+                </tr>
+                <tr class="none-data">
+                    <td colspan="7" class="text-center"><h5>您当前还没有订餐记录,快去<a class="font-18 text-info" href="__APP__/home/">订餐</a>吧~</h5></td>
+                </tr>
+            <tbody></tbody>
+        </table>
+    </div><!-- ./container -->
+</div>
+
+<script type="text/javascript">
+
+$(function () {
+
+    var orderList = {
+        orderData: null,
+        updateList: function () {
+            $('.new').remove();
+            if (!this.orderData || (_type(this.orderData) == 'array' && this.orderData.length == '0')) {
+                $('.none-data').css('display', 'table-row');
+                return false;
+            }
+            $('.none-data').css('display', 'none');
+            var obj = this.orderData;
+            for (var k in obj ) {
+                var item = $('.demo').clone();
+                var tds = item.find('td');
+                tds.eq(0).children('img').prop('src', '../images/' + obj[k].picture);
+                tds.eq(1).children('a').text(obj[k].dish_name).attr('href', '__APP__/home/dish/detail/id/' + obj[k].dish_id);
+                tds.eq(2).children('a').text(obj[k].store_name).attr('href', '__APP__/home/dish/index/id/' + obj[k].store_id );
+                tds.eq(3).text('￥' + obj[k].price);
+                tds.eq(4).text(obj[k].count);
+                tds.eq(5).text(obj[k].desc);
+                tds.eq(6).children('a').data('id', obj[k].id);
+                item.insertBefore('.demo').removeClass('demo').addClass('new');
+            }
+        },
+        bindEvent: function () {
+            $('.kind-item').on('click', function () {
+                if ($(this).hasClass('kind-item-checked')) {
+                    return false;
+                }
+
+                $('.kind-item-checked').removeClass('kind-item-checked');
+                $(this).addClass('kind-item-checked');
+
+                var data = {};
+                data.mealTime = $(this).data('sort');
+                $.post('__APP__/home/order/getOrderDataByKind', data, function (res) {
+                    switch (res.status) {
+                        case 'ok':
+                            orderList.orderData = res.data;
+                            orderList.updateList();
+                            break;
+                        case 'error':
+                            Common.alertDialog(res.data);
+                            break;
+                        case 'redirect':
+                            location.href = res.data;
+                            break;
+                    }
+                }, 'json')
+                .error(function () {
+                    Common.alertDialog('网络错误，请稍后再试');
+                });
+            });
+
+            $('.order-table').on('click', '.delete', function () {
+                if (!confirm('确定取消当前订餐')) {
+                    return false;
+                }
+                var self = $(this);
+                var data = {};
+                data.id = $(this).data('id');
+                $.post('__APP__/home/order/deleteMenuItem', data, function (res) {
+                    switch (res.status) {
+                        case 'ok':
+                            Common.alertDialog('取消订餐成功');
+                            self.parents('.new').remove();
+                            if ($('.new').length == 0) {
+                                $('.none-data').css('display', 'table-row')
+                            }
+                            break;
+                        case 'error':
+                            Common.alertDialog(res.data);
+                            break;
+                        case 'redirect':
+                            location.href = res.data;
+                            break;
+                    }
+                }, 'json')
+                .error(function () {
+                    Common.alertDialog('网络错误，请稍后再试');
+                });
+
+            });
+        },
+        init: function () {
+            this.bindEvent();
+            var meal_time = Common.get('__APP__/home/order/todayorder/', 'mealtime');
+            if (meal_time == 'night') {
+                $('.kind-item').eq(1).trigger('click');
+            } else {
+                $('.kind-item').eq(0).trigger('click');
+            }
+        }
+    };
+    orderList.init();
+
+
+});
+</script>

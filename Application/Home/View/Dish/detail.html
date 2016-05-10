@@ -1,0 +1,423 @@
+<link href="../css/datepicker-custom.css" rel="stylesheet">
+<script src="../js/bootstrap-datepicker.js"></script>
+<style type="text/css">
+    .section-padding {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .price {
+        font-size: 26px;
+        color: #2baab1;
+        font-weight: bolder;
+    }
+    .item-name {
+        font-size: 12px;
+        color: #999;
+        position: relative;
+        top: -6px;
+        font-weight: 200;
+        display: inline-block;
+        width: 40px;
+    }
+    .rmb {
+        font-size: 18px;
+        position: relative;
+        top: -4px;
+    }
+    .star {
+        color: #FFB300;
+    }
+    .detail-img {
+        border: 1px solid #eee;
+    }
+    .comment-item {
+        border-bottom: 1px solid #eee;
+        margin-top: 10px;
+    }
+    .form-item-name {
+        float: left;
+        padding-left: 15px;
+        -ms-text-align-last: left;
+        text-align: left!important;
+        width: 55px;
+        font-size: 12px;
+        color: #999;
+        font-weight: 200;
+    }
+    .list-demo ,.comment-demo{
+        display: none;
+    }
+    .no {
+        display: none;
+    }
+</style>
+<div class="section bg-white section-padding" id="dishSection">
+    <div class="container">
+        <h3>
+            <i class="fa fa-cutlery"></i>
+            {$dishInfo.name}
+        </h3>
+        <p>{$dishInfo.store_name}-{$dishInfo.style_name}-{$dishInfo.kind_name}</p>
+        <div class="row first">
+            <div class="col-sm-6">
+                <img src="../images/{$dishInfo.picture}" alt="" class="fadeInRight animation-element col-sm-12 no-padding detail-img">
+            </div>
+            <div class="col-sm-6">
+                <div class="fadeInUp animation-element">
+                    <div class="feature-detail col-sm-10 no-padding">
+                        <div class="m-bottom-xs m-top-sm"><span class="item-name">价格:&nbsp;&nbsp;&nbsp;</span><span class="text-success common-font price"><span class="rmb">￥</span>{$dishInfo.price}</span></div>
+                    </div>
+                </div>
+                <div class="fadeInUp animation-element animation-delay2">
+                    <div class="col-sm-10 no-padding m-top-sm m-bottom-xs border-top border-bottom">
+                        <span class="col-sm-4 m-top-sm text-center m-bottom-sm">已订{$dishInfo.count}份</span>
+                        <span class="star col-sm-4 m-top-sm text-center m-bottom-sm border-left">
+                            <if condition="$dishInfo.score eq 0">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    &nbsp;&nbsp;
+                                    3.0
+                            <else />
+                                <for start="1" end="$dishInfo.score">
+                                <i class="fa fa-star"></i>
+                                </for>
+                                <if condition="floor($dishInfo['score']) neq $dishInfo['score']">
+                                <i class="fa fa-star-half-o"></i>
+                                <else />
+                                <i class="fa fa-star"></i>
+                                </if>
+                                &nbsp;&nbsp;
+                                {$dishInfo.score}
+                            </if>
+                            分
+                        </span>
+                        <span class="col-sm-4 m-top-sm text-center m-bottom-sm border-left">{$dishInfo.comment_count}条评论</span>
+                    </div>
+                </div>
+                <form action="" class="form-horizontal">
+                <div class="fadeInUp animation-element animation-delay4">
+                    <div class="feature-detail col-sm-10 no-padding">
+                        <div class="m-bottom-xs m-top-sm">
+                            <!-- <div class="input-group" >
+                                <div class="input-group-btn">
+                                    <button type="button" class="btn btn-default no-shadow"><i class="fa fa-plus m-right-xs"></i></button>
+                                </div>
+                                <input type="tel" name="newpw" value="1" class="text-center form-control" id="inputEmailModal" placeholder="数量">
+                                <div class="input-group-btn">
+                                    <button type="button" class="btn btn-default no-shadow"><i class="fa fa-minus m-right-xs"></i></button>
+                                </div>
+                            </div> -->
+                            <div class="form-group">
+                                <label class="control-label form-item-name">数量:</label>
+                                <div class="col-md-4 col-xs-11 input-group" >
+                                    <div class="spinner-buttons input-group-btn">
+                                        <button type="button" class="plus btn btn-sm spinner-up btn-primary">
+                                            <i class="fa fa-plus"></i>
+                                        </button>
+                                    </div>
+                                    <input type="text" class="input-sm mount text-center form-control" maxlength="3" readonly="" value="1">
+                                    <div class="spinner-buttons input-group-btn">
+                                        <button type="button" class="minus btn btn-sm spinner-down btn-warning">
+                                            <i class="fa fa-minus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fadeInUp animation-element animation-delay6">
+                    <div class="feature-detail col-sm-10 no-padding">
+                        <div class="form-group">
+                            <label class="control-label form-item-name">时间:</label>
+                            <div class="col-md-4 col-xs-11 no-padding">
+                                <input class="form-control form-control-inline input-sm order-date" size="16" readonly type="text" value="{$order_date}">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fadeInUp animation-element animation-delay8">
+                    <div class="feature-detail col-sm-10 no-padding">
+                        <div class="form-group">
+                            <label class="control-label form-item-name">餐次:</label>
+                            <div class="col-lg-10 no-padding">
+                                <div class="radio inline-block">
+                                    <div class="custom-radio m-right-xs">
+                                        <input type="radio" value="noon" id="canci1" name="canci">
+                                        <label for="canci1"></label>
+                                    </div>
+                                    <div class="inline-block vertical-top">午餐（{$noon}截止）</div>
+                                </div>
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                <div class="radio inline-block">
+                                    <div class="custom-radio m-right-xs">
+                                        <input type="radio" value="night" id="canci2" name="canci">
+                                        <label for="canci2"></label>
+                                    </div>
+                                    <div class="inline-block vertical-top">晚餐（{$night}截止）</div>
+                                </div>
+                            </div><!-- /.col -->
+                        </div>
+                    </div>
+                </div>
+                <div class="fadeInUp animation-element animation-delay8">
+                    <div class="feature-detail col-sm-10 no-padding">
+                        <div class="form-group">
+                            <label class="control-label form-item-name">口味:</label>
+                            <div class="col-lg-10 no-padding">
+                                <textarea class="form-control" name="desc" placeholder="没有可不填" rows="3"></textarea>
+                            </div><!-- /.col -->
+                        </div><!-- /form-group -->
+                    </div>
+                </div>
+                </form>
+
+                <div class="fadeInUp animation-element animation-delay10">
+                    <div class="feature-detail col-sm-5 no-padding m-bottom-xs m-top-sm">
+                        <a href="javascript:void(0)" class="addMenu btn btn-success btn-lg">&nbsp;&nbsp;加入订餐菜单&nbsp;&nbsp;</a>
+                    </div>
+                    <div class="feature-detail col-sm-5 no-padding m-bottom-xs m-top-sm">
+                        <a href="javascript:void(0)" class="addFavorite btn btn-info btn-lg">&nbsp;&nbsp;加入收藏夹&nbsp;&nbsp;</a>
+                    </div>
+
+                </div>
+            </div><!-- ./col -->
+        </div><!-- ./row -->
+    </div><!-- ./container -->
+</div>
+
+<div class="section bg-white border-top" id="commentSeciton">
+    <div class="container">
+        <div class="row m-top-md second">
+            <div class="col-sm-8">
+                <div class="smart-widget-body">
+                    <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 230px;"><div id="chatScroll" style="overflow: hidden; width: auto; height: 230px;">
+                        <ul class="chat">
+                            <li class="left clearfix comment-demo">
+                                <span class="chat-img pull-left">
+                                    <img class="avatar" src="../images/profile/profile2.jpg" alt="User Avatar">
+                                </span>
+                                <div class="chat-body clearfix">
+                                    <div class="header">
+                                        <strong class="username primary-font">John Doe</strong>
+                                        <span class="star">
+                                            &nbsp;&nbsp;
+                                            <i class="fa fa-heart-o"></i>
+                                            <i class="fa fa-heart-o"></i>
+                                            <i class="fa fa-heart-o"></i>
+                                            <i class="fa fa-heart-o"></i>
+                                            <i class="fa fa-heart-o"></i>
+                                            &nbsp;&nbsp;
+                                            <span class="score">5.0分</span>
+                                        </span>
+                                        <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> <span class="time"></span></small>
+                                    </div>
+                                    <p class="comment-desc">
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="no text-center">
+                                暂时还没有评论
+                            </li>
+                        </ul>
+                    </div><div class="slimScrollBar" style="width: 7px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 116.009px; background: rgb(0, 0, 0);"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; opacity: 0.2; z-index: 90; right: 1px; background: rgb(51, 51, 51);"></div></div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="smart-widget widget-green">
+                    <div class="smart-widget-header">
+                        <i class="fa fa-bar-chart-o"></i>&nbsp;&nbsp;好吃排行
+                        <span class="badge badge-danger pull-right">10</span>
+                    </div>
+                    <div class="smart-widget-inner">
+                        <ul class="list-group to-do-list sortable-list no-border">
+                            <li class="list-group-item list-demo" draggable="true">
+                                <span class="badge badge-info pull-left">1</span>&nbsp;&nbsp;<a href="">SEO Optimisation</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+$(function() {
+    $('.order-date').datepicker({
+        format: 'yyyy-mm-dd'
+    });
+
+    $('.datepicker-days').on('click', 'td', function () {
+        $('.order-date').blur();
+    });
+
+
+    var orderMenu = {
+        get mount() {
+            return $('.mount').val();
+        },
+        set mount(value) {
+            $('.mount').val(value);
+        },
+        bindEvent: function () {
+            $('.plus,.minus').on('click', function () {
+                var cop = 'plus';
+                cop = $(this).hasClass('minus') ? 'minus' : 'plus';
+                if (cop == 'plus') {
+                    orderMenu.mount++;
+                } else {
+                    if (orderMenu.mount > 1) {
+                        orderMenu.mount--;
+                    }
+                }
+            });
+
+            $('.addFavorite').on('click', function () {
+                var data  = {};
+                data.kind = 'dish';
+                data.id   = Common.get('/online_meal_ordering/home/dish/detail/', 'id');
+                $.post('__APP__/home/favorite/addFavorite', data, function (res) {
+                    switch (res.status) {
+                        case 'ok':
+                            Common.alertDialog('添加到收藏夹成功');
+                            break;
+                        case 'redirect':
+                            location.href = res.data;
+                            break;
+                        case 'error':
+                            Common.alertDialog(res.data);
+                            break;
+                    }
+                }, 'json')
+                .error(function () {
+                    Common.alertDialog('网络错误，请稍后再试');
+                });
+            });
+
+            $('.addMenu').on('click', function () {
+                var args = {};
+                args.id = Common.get('__APP__/home/dish/detail/','id');
+                args.date = $('.order-date').val();
+                args.mount = $('.mount').val();
+                args.meal_time = $('input[name=canci]:checked').val();
+                args.desc = $('textarea[name=desc]').val();
+
+                $.post('__APP__/home/order/addOrder', args, function (res) {
+                    switch (res.status) {
+                        case 'ok':
+                            if (args.date == (new Date()).Format('yyyy-MM-dd')) {
+                                location.href = '__APP__/home/order/todayorder/mealtime/' + args.meal_time;
+                            } else {
+                                alert('订餐计划');
+                            }
+                            break;
+                        case 'redirect':
+                            location.href = res.data;
+                            break;
+                        case 'error':
+                            Common.alertDialog(res.data);
+                            break;
+                    }
+                }, 'json')
+                .error(function () {
+                    Common.alertDialog('网络错误，请稍后再试');
+                });
+            });
+        },
+        init: function () {
+            this.bindEvent();
+            var meal_time = Common.get('__APP__/home/dish/detail/', 'mealtime');
+            if (meal_time == 'night') {
+                $('input[name=canci]').eq(1).prop('checked', 'checked');
+            } else {
+                $('input[name=canci]').eq(0).prop('checked', 'checked');
+            }
+        }
+    };
+
+    orderMenu.init();
+
+
+    var rankList = {
+        listData: null,
+        updateRankList: function () {
+            if (!this.listData) {
+                return false;
+            }
+            var list = this.listData;
+            var i = 1;
+            for (var k in list) {
+                var newItem = $('.list-demo').clone();
+                newItem.find('span').text(i++);
+                newItem.find('a').text(list[k].name).attr('href', '__APP__/home/dish/detail/id/' + list[k].id);
+                newItem.insertBefore('.list-demo').removeClass('list-demo').addClass('list-new');
+            }
+        },
+        loadRankData: function () {
+            $.get('__APP__/home/dish/getRankList', function (res) {
+                if (res.status == 'ok') {
+                    rankList.listData = res.data;
+                    rankList.updateRankList();
+                } else {
+                    rankList.listData = null;
+                }
+            },'json')
+            .error(function () {
+                Common.alertDialog('网路错误，请稍后再试');
+            });
+        },
+        init: function () {
+            this.loadRankData();
+        }
+    }
+    rankList.init();
+
+
+    var CommentList = {
+        commentData: null,
+        updateList: function () {
+            $('.no').css('display', 'none');
+            $('.new-comment').remove();
+            if (_type(CommentList.commentData) == 'array' && CommentList.commentData.length == 0) {
+                $('.no').css('display', 'block');
+            } else {
+                var data = this.commentData;
+                for (var k in data) {
+                    var newItem = $('.comment-demo').clone();
+                    newItem.find('.avatar').prop('src', '../' + data[k].headimg);
+                    newItem.find('.username').text(data[k].name);
+                    newItem.find('.star>i:lt(' + data[k].score + ')').removeClass('fa-heart-o').addClass('fa-heart');
+                    newItem.find('.score').text(data[k].score + '.0分')
+                    newItem.find('.time').text(data[k].comment_time)
+                    newItem.find('.comment-desc').text(data[k].comment)
+                    newItem.insertBefore('.comment-demo').removeClass('comment-demo').addClass('new-comment');
+                }
+            }
+        },
+        loadCommentData: function () {
+            var args = {};
+            args.id = Common.get('__APP__/home/dish/detail/','id');
+            $.post('__APP__/home/dish/getCommentByDish', args, function (res) {
+                if (res.status == 'ok') {
+                    CommentList.commentData = res.data;
+                    CommentList.updateList();
+                }
+            }, 'json')
+            .error(function () {
+                Common.alertDialog('网路错误，请稍后再试');
+            });
+        },
+        init: function () {
+            this.loadCommentData();
+        }
+    };
+
+    CommentList.init();
+
+});
+
+</script>
+
