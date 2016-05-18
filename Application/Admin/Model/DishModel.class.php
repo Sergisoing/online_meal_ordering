@@ -14,7 +14,7 @@ class DishModel extends Model {
 
 
     public function getDishList() {
-        $data = $this->query('select * from dishV');
+        $data = $this->query('select * from dishv');
         return $data;
     }
 
