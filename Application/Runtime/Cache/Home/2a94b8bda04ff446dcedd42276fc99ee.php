@@ -1,10 +1,5 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
-    <!--
-    #######################################
-        - THE HEAD PART -
-    ######################################
-    -->
     <head>
         <meta charset="utf-8">
         <title>员工订餐系统</title>

@@ -506,6 +506,8 @@ ul.store-list>li.current {
                             <p class="clearfix store-value">15801094323</p>
                             <p class="clearfix store-key">店铺地址：</p>
                             <p class="clearfix store-value">湘潭大学</p>
+                            <p class="clearfix store-key">总付款：</p>
+                            <p class="clearfix store-value">￥100.00</p>
                         </div>
                         <div class="store-detail">
                             <div class="ribbon-wrapper">
@@ -518,6 +520,7 @@ ul.store-list>li.current {
                                     <tr>
                                         <th>菜名</th>
                                         <th>数量</th>
+                                        <th>价格</th>
                                         <th>说明</th>
                                     </tr>
                                 </thead>
@@ -549,6 +552,8 @@ ul.store-list>li.current {
                             <p class="clearfix store-value">15801094323</p>
                             <p class="clearfix store-key">店铺地址：</p>
                             <p class="clearfix store-value">湘潭大学</p>
+                            <p class="clearfix store-key">总付款：</p>
+                            <p class="clearfix store-value">￥100.00</p>
                         </div>
                         <div class="store-detail">
                             <div class="ribbon-wrapper">
@@ -560,6 +565,7 @@ ul.store-list>li.current {
                                     <tr>
                                         <th>菜名</th>
                                         <th>数量</th>
+                                        <th>价格</th>
                                         <th>说明</th>
                                     </tr>
                                 </thead>
@@ -590,7 +596,7 @@ $(function () {
         night: '<?php echo ($night); ?>',
         currentId: null,
         showStore: function (meal_time) {
-            if (_type(this.storeData) == 'array' && this.storeData.length == 0) {
+            if (this.storeData ==  null || (_type(this.storeData) == 'array' && this.storeData.length == 0)) {
                 $('#' + meal_time + '>.ex').css('display', 'none');
                 $('#' + meal_time + '>.no').css('display', 'block');
                 return false;
@@ -625,6 +631,7 @@ $(function () {
             $('.store-value').eq(0).text(data.name);
             $('.store-value').eq(1).text(data.phone);
             $('.store-value').eq(2).text(data.adress);
+            $('.store-value').eq(3).text( "￥" + data.total);
 
             switch (data.status) {
                 case 'new':
@@ -636,11 +643,13 @@ $(function () {
                     $('.send').css('display', 'inline-block');
                     $('.ribbon-wrapper').css('display', 'block');
                     $('.shadow-pulse').text('已订');
+                    $('.store-list>li.current').addClass('success');
                     break;
                 case 'send_success':
                     $('.send,.order').css('display', 'none');
                     $('.ribbon-wrapper').css('display', 'block');
                     $('.shadow-pulse').text('已派送');
+                    $('.store-list>li.current').addClass('success');
                     break;
             }
 
@@ -657,6 +666,7 @@ $(function () {
                 tds = '';
                 tds = '<tr><td rowspan="' + row + '">' + dish[k].dish_name + '</td>';
                 tds += '<td rowspan="' + row + '">X' + dish[k].count + '</td>';
+                tds += '<td rowspan="' + row + '">￥' + dish[k].price + '</td>';
                 var desc = dish[k].desc;
                 for (var k1 in desc) {
                     if (k1 == 0) {
@@ -697,14 +707,17 @@ $(function () {
                 deadline = new Date(date + ' ' + orderMeal.night + ':00');
                 str = '员工晚餐订餐情况正在统计，请在' + orderMeal.night + '后来查看~';
             }
+
             if (now < deadline) {
                 $('.no').text(str);
                 $('.no').css('display', 'block');
+                orderMeal.storeData = null;
                 orderMeal.showStore(meal_time);
                 return false;
             } else {
                 $('.no').text('当前还没有员工订餐~');
             }
+
             $.post('/online_meal_ordering/admin/index/getTodayOrderStore', {"meal_time" : meal_time}, function (res) {
                 if (res.status == 'ok') {
                     orderMeal.storeData = res.data
@@ -774,7 +787,6 @@ $(function () {
         init: function () {
             this.loadStoreData();
             this.bindEvent();
-
         }
     };
 

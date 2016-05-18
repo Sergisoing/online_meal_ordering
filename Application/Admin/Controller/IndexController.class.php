@@ -57,7 +57,7 @@ class IndexController extends Controller {
         }
         $order = D('order');
         $date = date('Y-m-d');
-        $orderData = $order->query('SELECT `store`.`name`, `store`.`phone`, `store`.`adress`,`dish_id`, `dish_name`, `count`, `order_menu_v`.`desc` FROM `order_menu_v` LEFT JOIN `store` ON `order_menu_v`.`store_id` = `store`.`id` WHERE `order_menu_v`.`order_date` = \''. $date . '\' AND `meal_time` = \'' . $mealTime . '\' AND `store_id` = ' . $id);
+        $orderData = $order->query('SELECT `store`.`name`, `store`.`phone`, `store`.`adress`,`dish_id`, `dish_name`, `count`, `price`, `order_menu_v`.`desc` FROM `order_menu_v` LEFT JOIN `store` ON `order_menu_v`.`store_id` = `store`.`id` WHERE `order_menu_v`.`order_date` = \''. $date . '\' AND `meal_time` = \'' . $mealTime . '\' AND `store_id` = ' . $id);
 
         $memK = $date . '-' . $mealTime . 'order-status';
         $cache = new \Think\Cache\Driver\Memcache();
@@ -69,8 +69,12 @@ class IndexController extends Controller {
         $res['adress'] = $orderData[0]['adress'];
         $res['status'] = $data[$id]['status'];
 
+        $sum = 0;
+
         foreach ($orderData as $value) {
+            $sum += $value['count'] * $value['price'];
             $res['dish'][$value['dish_id']]['dish_name'] = $value['dish_name'];
+            $res['dish'][$value['dish_id']]['price'] = number_format($value['price'], 2);
             if (isset($res['dish'][$value['dish_id']]['count'])) {
                 $res['dish'][$value['dish_id']]['count'] += $value['count'];
             } else {
@@ -78,6 +82,7 @@ class IndexController extends Controller {
             }
             $res['dish'][$value['dish_id']]['desc'][] =  $value['desc'];
         }
+        $res['total'] = number_format($sum, 2);
 
         $this->ajaxReturn(array('status' => 'ok', 'data' => $res));
 
@@ -108,12 +113,12 @@ class IndexController extends Controller {
             $data[$id]['status'] = 'order_success';
         }
         $cache->set($memK, $data);
-        $this->updateUserOrderStatus($meal_time);
+        $this->updateUserOrderStatus($mealTime);
         $this->ajaxReturn(array('status' => 'ok'));
     }
 
 
-    public function updateUserOrderStatus($meal_time) {
+    public function updateUserOrderStatus($mealTime) {
         $date = date('Y-m-d');
         $memK = $date . '-' . $mealTime . 'order-status';
         $cache = new \Think\Cache\Driver\Memcache();

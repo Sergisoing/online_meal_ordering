@@ -84,7 +84,7 @@ class UserController extends Controller {
         // 上传文件
         $info   =   $upload->upload();
         if(!$info) {// 上传错误提示错误信息
-            $this->ajaxReturn(array('status' => 'error', 'data' => $uploadError));
+            $this->ajaxReturn(array('status' => 'error', 'data' => '图片上传失败， 或者没有图片上传'));
         }else{// 上传成功
             $picUrl = 'images/profile/' . $info['email']['savepath'] . $info['email']['savename'];
         }

@@ -54,7 +54,7 @@ class StoreController extends Controller {
         $upload->savePath  =     ''; // 设置附件上传（子）目录
         $info   =   $upload->upload();
         if(!$info) {// 上传错误提示错误信息
-            $this->ajaxReturn(array('status' => 'error', 'data' => $uploadError));
+            $this->ajaxReturn(array('status' => 'error', 'data' => $upload->getError()));
         }else{// 上传成功
             $image = new \Think\Image();
             foreach ($info as $key => $value) {
@@ -86,7 +86,9 @@ class StoreController extends Controller {
         $data['is_delete'] = '0';
         $data['detail_pics'] = json_encode($detail_pics);
         if (!$store->create($data)) {
-            $this->ajaxReturn(array('status' => 'error', 'data' => $store->getError()));
+            if ($upload->getError() != '没有文件被上传！') {
+                $this->ajaxReturn(array('status' => 'error', 'data' => $store->getError()));
+            }
         } else {
             $store->add();
         }
@@ -105,7 +107,9 @@ class StoreController extends Controller {
         $upload->savePath  =     ''; // 设置附件上传（子）目录
         $info   =   $upload->upload();
         if(!$info) {// 上传错误提示错误信息
-            $this->ajaxReturn(array('status' => 'error', 'data' => $uploadError));
+            if ($upload->getError() != '没有文件被上传！') {
+                $this->ajaxReturn(array('status' => 'error', 'data' => $store->getError()));
+            }
         }else{// 上传成功
             $image = new \Think\Image();
             foreach ($info as $key => $value) {
