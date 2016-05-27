@@ -26,33 +26,6 @@ class UserController extends Controller {
             $res['data'] = decode($preUrl);
         }
         $this->ajaxReturn($res);
-
-
-        // $d = M('staff');
-        // $data['emp_no'] = '2012190429';
-        // $data['name'] = '杨勤川';
-        // $data['phone'] = '15801094323';
-        // $data['department'] = 'web';
-        // $data['sex'] = '0';
-        // $data['headimg'] = 'http://img.buding.cn/weiche/2016/03/25/512b85d40f4925dda15103084d60c44e.jpg';
-        // $data['password'] = md5('buding');
-        // $data['email'] = 'yangqinchuan_kis@163.com';
-        // $d->add($data);
-
-
-        // $data = $d->select(1);
-        // $data = $d->select(1,2);
-        // dump($data);
-
-        // 查询单条记录
-        // $data = $d->find(1);
-        // dump($data);
-        // $data = $d->getField('password');
-        // dump($data);
-        // 读取字段值
-
-        // $user = D('User');
-        // dump($user);
     }
 
     public function logout() {
